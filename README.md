@@ -1,3 +1,36 @@
+- [Welcome](#welcome)
+  * [About Desjardins](#about-desjardins)
+  * [About the project](#about-the-project)
+    + [Team](#team)
+- [Software to install](#software-to-install)
+- [Learning](#learning)
+  * [Project Management](#project-management)
+  * [GIT](#git)
+  * [Devops](#devops)
+  * [Learning Programm](#learning-programm)
+    + [Java 8](#java-8)
+    + [Maven](#maven)
+    + [Spring Core](#spring-core)
+    + [Spring data](#spring-data)
+    + [Web Services](#web-services)
+    + [Spring MVC:](#spring-mvc-)
+    + [Spring Rest](#spring-rest)
+    + [Spring Boot](#spring-boot)
+    + [Junit:](#junit-)
+    + [Jenkins Pipeline](#jenkins-pipeline)
+    + [Hibernate/JPA](#hibernate-jpa)
+  * [Spring Boot](#spring-boot-1)
+  * [Angular](#angular)
+  * [Tests](#tests)
+- [Dev, best practices and my best links](#dev--best-practices-and-my-best-links)
+- [Documentations](#documentations)
+- [Social](#social)
+- [Team practice:](#team-practice-)
+- [Certifications](#certifications)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 # Welcome
 * Alithya presentation
 * Group Presentation
