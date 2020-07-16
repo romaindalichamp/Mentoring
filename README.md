@@ -29,7 +29,7 @@
 - [Social](#social)
 - [Team practice:](#team-practice-)
 - [Certifications](#certifications)
-- [My MVPs](#My MVPs)
+- [My MVPs](#my-mvps)
 
 # Welcome
 * Questions about Alithya ?
@@ -134,7 +134,7 @@
 * Montréal Java User Group: https://www.meetup.com/montreal-jug/
 * Virtual Java User Group: https://www.meetup.com/virtualJUG/
 
-# Team practice:
+# Team practice
 * Fun Dojo ==> test ==> code
 
 # Certifications
