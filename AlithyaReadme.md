@@ -22,6 +22,7 @@
     + [Jenkins Pipeline](#jenkins-pipeline)
     + [Hibernate/JPA](#hibernate-jpa)
   * [Spring Boot](#spring-boot-1)
+  * [HTML / CSS / Javascript](#html-/-css-/-javascript)
   * [Angular](#angular)
   * [Tests](#tests)
 - [Dev, best practices and my best links](#dev--best-practices-and-my-best-links)
@@ -76,6 +77,7 @@
 * Jenkins
 * Github / Gitlab
 * SonarQube / SonarCloud
+* BitBucket
 
 ## Learning Programm
 * ids oreilly dans le zip du project
@@ -110,6 +112,12 @@
 ## Spring Boot
 * https://start.spring.io/
 
+## HTML / CSS / Javascript
+* HTML: https://www.w3schools.com/js/default.asp
+* CSS: https://www.w3schools.com/js/default.asp
+* CSS: https://getbootstrap.com/docs/4.5/getting-started/introduction/
+* Javascript: https://www.w3schools.com/js/default.asp
+
 ## Angular
 * https://www.simplilearn.com/angularjs-vs-angular-2-vs-angular-4-differences-article
 
@@ -117,8 +125,8 @@
 * Unitaire - Jupiter: https://junit.org/junit5/docs/current/user-guide/#writing-tests
 * Intégration: Newman
 * QA: Askida CT
-* TDD: 
-* BDD: https://stackabuse.com/behavioral-design-patterns-in-java/#observer
+* TDD
+* BDD
 
 # Dev, best practices and my best links
 * REST Naming Conventions: https://restfulapi.net/resource-naming/
