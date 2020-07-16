@@ -1,10 +1,10 @@
 # Welcome
-* Présentation Alithya
+* Alithya presentation
 * Group Presentation
 
 ## About Desjardins
 * https://www.desjardins.com/
-* Enquêtes de sécurité ?
+* Security Check
 
 ## About the project
 * ZIP with all the infos
