@@ -15,10 +15,10 @@
     + [Spring Core](#spring-core)
     + [Spring data](#spring-data)
     + [Web Services](#web-services)
-    + [Spring MVC:](#spring-mvc-)
+    + [Spring MVC](#spring-mvc)
     + [Spring Rest](#spring-rest)
     + [Spring Boot](#spring-boot)
-    + [Junit:](#junit-)
+    + [Junit](#junit)
     + [Jenkins Pipeline](#jenkins-pipeline)
     + [Hibernate/JPA](#hibernate-jpa)
   * [Spring Boot](#spring-boot-1)
@@ -29,9 +29,6 @@
 - [Social](#social)
 - [Team practice:](#team-practice-)
 - [Certifications](#certifications)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 # Welcome
 * Alithya presentation
