@@ -56,7 +56,7 @@
 * Plugin: SonarLint
 * Plugin: Lombok
 * Plugin: Code Glance
-* Plugin: PLantUML
+* Plugin: PlantUML
 ### Eclipse
 * See with Marianne
 
