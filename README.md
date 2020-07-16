@@ -86,14 +86,14 @@
 * The Technology of Web Services du chapitre 1, chapitre 3 et 4 https://learning.oreilly.com/library/view/understanding-web-services/0201750813/
 * Sprint Rest: Chapitre 1 https://learning.oreilly.com/library/view/spring-rest/9781484208236/	
 * Les sections 4, 6, 7 et 8: https://learning.oreilly.com/videos/restful-web-apis/9780133890204	
-### Spring MVC: 
+### Spring MVC
 * Les chapitre 1, chapitre 2 et chapitre 3 jusqu'à Step 13: Part 2 - Theory Break - Spring MVC Architecture	https://learning.oreilly.com/videos/spring-mvc-for/9781789139341/	
 ### Spring Rest	
 * Spring Rest https://learning.oreilly.com/library/view/spring-rest/9781484208236/9781484208243_Ch01.xhtml	
 * Restful Web APIs: Les sections 4 à 9 https://www.safaribooksonline.com/library/view/restful-web-apis/9780133890204/	
 ### Spring Boot
 * Les sections Spring Boot Introduction et Spring Boot manual configuration https://learning.oreilly.com/videos/restful-web-apis/9780133890204	
-### Junit:	
+### Junit
 * https://learning.oreilly.com/videos/learn-java-unit/9781789340648	
 ### Jenkins Pipeline
 * https://learning.oreilly.com/videos/effective-jenkins-continuous/9781788477710/	
