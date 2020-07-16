@@ -113,8 +113,7 @@
 * https://start.spring.io/
 
 ## HTML / CSS / Javascript
-* HTML: https://www.w3schools.com/js/default.asp
-* CSS: https://www.w3schools.com/js/default.asp
+* HTML: https://www.w3schools.com/html/default.asp
 * CSS: https://getbootstrap.com/docs/4.5/getting-started/introduction/
 * Javascript: https://www.w3schools.com/js/default.asp
 
