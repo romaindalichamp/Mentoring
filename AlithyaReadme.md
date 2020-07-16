@@ -30,7 +30,7 @@
 - [Social](#social)
 - [Team practice:](#team-practice-)
 - [Certifications](#certifications)
-- [My MVPs](#my-mvps)
+- [My Spring Legacy MVPs(My Spring Legacy MVPs)](#my-spring-legacy-mpvs)
 
 # Welcome
 * Questions about Alithya ?
@@ -151,7 +151,7 @@
 * Java 8: two exams https://education.oracle.com/fr/oracle-certified-professional-java-se-8-programmer/trackp_357
 * Spring: https://tanzu.vmware.com/training/certification/spring-professional-certification
 
-# My MVPs
+# My Spring Legacy MVPs
 * https://github.com/fukakai/MVPs/tree/master/Java/Spring%20Legacy
 
 
