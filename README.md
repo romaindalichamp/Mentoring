@@ -29,6 +29,7 @@
 - [Social](#social)
 - [Team practice:](#team-practice-)
 - [Certifications](#certifications)
+- [My MVPs](#My MVPs)
 
 # Welcome
 * Questions about Alithya ?
@@ -46,10 +47,15 @@
 * Schedule
 
 # Software to install
-* Intellij Idea
 * Git
 * Postman
 * Putty
+### Intellij Idea
+* Plugin: SonarLint
+* Plugin: Lombok
+* 
+### Eclipse
+* See with Marianne
 
 # Learning
 ## Project Management
@@ -66,7 +72,7 @@
 ## Devops
 * Jenkins
 * Github / Gitlab
-* ...
+* SonarQube
 
 ## Learning Programm
 * ids oreilly dans le zip du project
@@ -134,6 +140,9 @@
 # Certifications
 * Java 8: two exams https://education.oracle.com/fr/oracle-certified-professional-java-se-8-programmer/trackp_357
 * Spring: https://tanzu.vmware.com/training/certification/spring-professional-certification
+
+# My MVPs
+* https://github.com/fukakai/MVPs/tree/master/Java/Spring%20Legacy
 
 
 <!-- toc generator: https://ecotrust-canada.github.io/markdown-toc/ -->
