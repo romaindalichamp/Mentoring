@@ -51,9 +51,11 @@
 * Postman
 * Putty
 ### Intellij Idea
+* Google Java Format: https://github.com/google/google-java-format
 * Plugin: SonarLint
 * Plugin: Lombok
-* 
+* Plugin: Code Glance
+* Plugin: PLantUML
 ### Eclipse
 * See with Marianne
 
@@ -72,7 +74,7 @@
 ## Devops
 * Jenkins
 * Github / Gitlab
-* SonarQube
+* SonarQube / SonarCloud
 
 ## Learning Programm
 * ids oreilly dans le zip du project
