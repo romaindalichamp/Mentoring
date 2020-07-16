@@ -79,7 +79,6 @@
 ### Maven	
 * https://learning.oreilly.com/videos/getting-started-with/9781782165729	
 ### Spring Core
-* Spring Core (Les sections de Introducing the Spring Framework jusqu'à :  Configuration Bean)	https://learning.oreilly.com/videos/learning-path-learn/9781491970836s
 * Spring Core: https://www.youtube.com/watch?v=K43qyHJXmWI
 ### Spring data 
 * (Les sections de Course Overview jusqu'à : Additional Query Techniques)	https://learning.oreilly.com/videos/spring-data-for/9781771375924/9781771375924-video239728
