@@ -39,7 +39,7 @@
 ## About Desjardins
 * https://www.desjardins.com/
 * Security Check
-* Liferay - Framework
+* Liferay - Framework 6.2 + JBoss ou 7 ?
 
 ## About the project
 * ZIP with all the infos
