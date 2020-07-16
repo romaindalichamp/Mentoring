@@ -24,18 +24,18 @@
 * Scrum Guide (English) https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf
 * Dig: https://www.scrum.org/resources/kanban-guide-scrum-teams
 
-# GIT
+## GIT
 * Cheat Sheet: https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
 * Practice: https://learngitbranching.js.org/?locale=fr_FR
 * Essential: https://learning.oreilly.com/videos/essential-git/200000006A0403	
 * Branching: https://nvie.com/posts/a-successful-git-branching-model/	
 
-# Devops
+## Devops
 * Jenkins
 * Github / Gitlab
 * ...
 
-# Learning Programm
+## Learning Programm
 * ids oreilly dans le zip du project
 ### Java 8
 * https://learning.oreilly.com/library/view/java-se-8/9780133430202/ch01.html	
@@ -66,13 +66,13 @@
 ### Hibernate/JPA
 * https://learning.oreilly.com/videos/hibernate-and-java/9781771373494/	
 
-# Spring Boot
+## Spring Boot
 * https://start.spring.io/
 
-# Angular
+## Angular
 * https://www.simplilearn.com/angularjs-vs-angular-2-vs-angular-4-differences-article
 
-# Tests
+## Tests
 * Unitaire - Jupiter: https://junit.org/junit5/docs/current/user-guide/#writing-tests
 * Intégration: Newman
 * QA: Askida CT
