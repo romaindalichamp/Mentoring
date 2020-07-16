@@ -22,7 +22,7 @@
     + [Jenkins Pipeline](#jenkins-pipeline)
     + [Hibernate/JPA](#hibernate-jpa)
   * [Spring Boot](#spring-boot-1)
-  * [HTML / CSS / Javascript](#html-/-css-/-javascript)
+  * [HTML / CSS / Javascript](#html-css-javascript)
   * [Angular](#angular)
   * [Tests](#tests)
 - [Dev, best practices and my best links](#dev--best-practices-and-my-best-links)
