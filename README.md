@@ -1,3 +1,5 @@
+Welcome to my Java 
+
 - [Welcome](#welcome)
   * [About Desjardins](#about-desjardins)
   * [About the project](#about-the-project)
@@ -135,3 +137,6 @@
 # Certifications
 * Java 8: two exams https://education.oracle.com/fr/oracle-certified-professional-java-se-8-programmer/trackp_357
 * Spring: https://tanzu.vmware.com/training/certification/spring-professional-certification
+
+
+<!-- toc generator: https://ecotrust-canada.github.io/markdown-toc/ -->
