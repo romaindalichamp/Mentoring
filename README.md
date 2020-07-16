@@ -1,4 +1,4 @@
-Welcome to my Java 
+# Welcome to my Java Learning Program
 
 - [Welcome](#welcome)
   * [About Desjardins](#about-desjardins)
