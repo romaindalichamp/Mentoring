@@ -39,6 +39,7 @@
 ## About Desjardins
 * https://www.desjardins.com/
 * Security Check
+* Liferay - Framework
 
 ## About the project
 * ZIP with all the infos
