@@ -31,7 +31,8 @@
 - [Certifications](#certifications)
 
 # Welcome
-* Alithya presentation
+* Questions about Alithya ?
+* About me
 * Group Presentation
 
 ## About Desjardins
