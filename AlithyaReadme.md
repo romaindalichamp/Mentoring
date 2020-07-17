@@ -1,14 +1,14 @@
 Welcome to my Java Learning Program for Desjardins
 
-[Welcome](#welcome)
+- [Welcome](#welcome)
   * [About Desjardins](#about-desjardins)
   * [About the project](#about-the-project)
     + [Team](#team)
-[Software to install](#software-to-install)
+- [Software to install](#software-to-install)
     + [Intellij Idea](#intellij-idea)
     + [Eclipse](#eclipse)
-[Best Practices and Best Links](#best-practices-and-best-links)
-[Learning](#learning)
+- [Best Practices and Best Links](#best-practices-and-best-links)
+- [Learning](#learning)
   * [SCRUM](#scrum)
   * [GIT](#git)
   * [Devops](#devops)
@@ -18,11 +18,11 @@ Welcome to my Java Learning Program for Desjardins
   * [HTML / CSS / Javascript](#html---css---javascript)
   * [Angular](#angular)
   * [Tests](#tests)
-[Documentations](#documentations)
-[Social](#social)
-[Team practice](#team-practice)
-[Certifications](#certifications)
-[My Spring Legacy MVPs](#my-spring-legacy-mvps)
+- [Documentations](#documentations)
+- [Social](#social)
+- [Team practice](#team-practice)
+- [Certifications](#certifications)
+- [My Spring Legacy MVPs](#my-spring-legacy-mvps)
 
 # Welcome
 
