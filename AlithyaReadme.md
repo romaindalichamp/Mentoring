@@ -10,17 +10,6 @@
     *   [GIT](#git)
     *   [Devops](#devops)
     *   [Learning Programm](#learning-programm)
-        *   [Java 8](#java-8)
-        *   [Maven](#maven)
-        *   [Spring Core](#spring-core)
-        *   [Spring data](#spring-data)
-        *   [Web Services](#web-services)
-        *   [Spring MVC](#spring-mvc)
-        *   [Spring Rest](#spring-rest)
-        *   [Spring Boot](#spring-boot)
-        *   [Junit](#junit)
-        *   [Jenkins Pipeline](#jenkins-pipeline)
-        *   [Hibernate/JPA](#hibernate-jpa)
     *   [Spring Boot](#spring-boot-1)
     *   [HTML / CSS / Javascript](#html--css--javascript)
     *   [Angular](#angular)
@@ -93,9 +82,9 @@
 *   SonarQube / SonarCloud
 *   BitBucket
 
-## Learning Programm
+## Learning Program
 
-*   ids oreilly dans le zip du project
+*   Oreilly IDs in the zip
 
 ### Java 8
 
