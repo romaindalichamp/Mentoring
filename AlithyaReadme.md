@@ -20,7 +20,7 @@ Welcome to my Java Learning Program for Desjardins
   * [Tests](#tests)
 - [Documentations](#documentations)
 - [Social](#social)
-- [Team practice](#team-practice)
+- [Coding Dojo](#coding-dojo)
 - [Certifications](#certifications)
 - [My Spring Legacy MVPs](#my-spring-legacy-mvps)
 
@@ -112,9 +112,9 @@ Welcome to my Java Learning Program for Desjardins
 
 <table><tbody><tr><td>Montréal Java User Group</td><td>https://www.meetup.com/montreal-jug/</td></tr><tr><td>Virtual Java User Group</td><td>https://www.meetup.com/virtualJUG/</td></tr></tbody></table>
 
-# Team practice
+# Coding Dojo
 
-*   Fun Dojo ==> test ==> code
+<table><tbody><tr><td>Coding Kata - FizzBuzz</td><td>https://codingdojo.org/kata/</td></tr></tbody></table>
 
 # Certifications
 
