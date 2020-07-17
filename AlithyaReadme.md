@@ -1,3 +1,5 @@
+Welcome to my Java Learning Program for Desjardins
+
 [Welcome](#welcome)
   * [About Desjardins](#about-desjardins)
   * [About the project](#about-the-project)
