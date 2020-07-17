@@ -82,7 +82,7 @@
 
 # Documentations
 
-<table><tbody><tr><td>Java 8 API</td><td>https://docs.oracle.com/javase/8/docs/api/</td></tr><tr><td>Angular</td><td>https://angular.io/docs</td></tr><tr><td>Spring</td><td>https://docs.spring.io/spring/docs/current/spring-framework-reference/</td></tr><tr><td>Junit Jupiter</td><td>https://junit.org/junit5/docs/current/user-guide/#writing-tests</td></tr></tbody></table>
+<table><tbody><tr><td>Java 8 API</td><td>https://docs.oracle.com/javase/8/docs/api/</td></tr><tr><td>Angular</td><td>https://angular.io/tutorial/toh-pt0</td></tr><tr><td>Spring</td><td>https://docs.spring.io/spring/docs/current/spring-framework-reference/</td></tr><tr><td>Junit Jupiter</td><td>https://junit.org/junit5/docs/current/user-guide/#writing-tests</td></tr></tbody></table>
 
 # Social
 
