@@ -1,4 +1,3 @@
-[Welcome to my Java Learning Program](#welcome-to-my-java-learning-program)
 [Welcome](#welcome)
   * [About Desjardins](#about-desjardins)
   * [About the project](#about-the-project)
@@ -22,6 +21,7 @@
 [Team practice](#team-practice)
 [Certifications](#certifications)
 [My Spring Legacy MVPs](#my-spring-legacy-mvps)
+
 # Welcome
 
 *   Questions about Alithya ?
