@@ -99,47 +99,7 @@
 
 ### Java 8
 
-<table><tbody><tr><td>Java SE 8</td><td>https://learning.oreilly.com/library/view/java-se-8/9780133430202/ch01.html</td></tr><tr><td>Date and Time API</td><td>https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch03.xhtml</td></tr><tr><td>Streams API</td><td>https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch05.xhtml</td></tr></tbody></table>
-
-### Maven
-
-<table><tbody><tr><td>Maven</td><td>https://learning.oreilly.com/videos/getting-started-with/9781782165729</td></tr></tbody></table>
-
-### Spring Core
-
-<table><tbody><tr><td>IOC</td><td>https://www.youtube.com/watch?v=K43qyHJXmWI</td></tr></tbody></table>
-
-### Spring data
-
-<table><tbody><tr><td>Course Overview jusqu'à : Additional Query Techniques</td><td>https://learning.oreilly.com/videos/spring-data-for/9781771375924/9781771375924-video239728</td></tr></tbody></table>
-
-### Web Services
-
-<table><tbody><tr><td>Chapitre 1, chapitre 3 et 4&nbsp;</td><td>https://learning.oreilly.com/library/view/understanding-web-services/0201750813/</td></tr><tr><td>Spring Rest: Chapitre 1</td><td>https://learning.oreilly.com/library/view/spring-rest/9781484208236/</td></tr><tr><td>Sections 4, 6, 7 et 8</td><td>https://learning.oreilly.com/videos/restful-web-apis/9780133890204</td></tr></tbody></table>
-
-### Spring MVC
-
-<table><tbody><tr><td>Chapitre 1, chapitre 2 et chapitre 3 jusqu'à Step 13: Part 2 - Theory Break - Spring MVC Architecture</td><td>https://learning.oreilly.com/videos/spring-mvc-for/9781789139341/</td></tr></tbody></table>
-
-### Spring Rest
-
-<table><tbody><tr><td>Spring Rest</td><td>https://learning.oreilly.com/library/view/spring-rest/9781484208236/9781484208243_Ch01.xhtml</td></tr><tr><td>Restful Web APIs: Les sections 4 à 9</td><td>https://www.safaribooksonline.com/library/view/restful-web-apis/9780133890204/</td></tr></tbody></table>
-
-### Spring Boot
-
-<table><tbody><tr><td>Spring Boot Introduction et Spring Boot manual configuration</td><td>https://learning.oreilly.com/videos/restful-web-apis/9780133890204</td></tr></tbody></table>
-
-### Junit
-
-<table><tbody><tr><td>Junit</td><td>https://learning.oreilly.com/videos/learn-java-unit/9781789340648</td></tr></tbody></table>
-
-### Jenkins Pipeline
-
-<table><tbody><tr><td>Jenkins Pipeline</td><td>https://learning.oreilly.com/videos/effective-jenkins-continuous/9781788477710/</td></tr></tbody></table>
-
-### Hibernate/JPA
-
-<table><tbody><tr><td>Hibernate / JPA</td><td>https://learning.oreilly.com/videos/hibernate-and-java/9781771373494/</td></tr></tbody></table>
+<table><tbody><tr><td>Java SE 8</td><td>https://learning.oreilly.com/library/view/java-se-8/9780133430202/ch01.html</td><td>&nbsp;</td></tr><tr><td>Date and Time API</td><td>https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch03.xhtml</td><td>&nbsp;</td></tr><tr><td>Streams API</td><td>https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch05.xhtml</td><td>&nbsp;</td></tr><tr><td>Maven</td><td>https://learning.oreilly.com/videos/getting-started-with/9781782165729</td><td>&nbsp;</td></tr><tr><td>Spring Core</td><td>https://www.youtube.com/watch?v=K43qyHJXmWI</td><td>&nbsp;</td></tr><tr><td>Spring Data</td><td>https://learning.oreilly.com/videos/spring-data-for/9781771375924/9781771375924-video239728</td><td>Course Overview jusqu'à : Additional Query Techniques</td></tr><tr><td>Web Services</td><td>https://learning.oreilly.com/library/view/understanding-web-services/0201750813/</td><td>Chapitre 1, chapitre 3 et 4&nbsp;</td></tr><tr><td>Web Services</td><td>https://learning.oreilly.com/library/view/spring-rest/9781484208236/</td><td>Spring Rest: Chapitre 1</td></tr><tr><td>Web Services</td><td>https://learning.oreilly.com/videos/restful-web-apis/9780133890204</td><td>Sections 4, 6, 7 et 8</td></tr><tr><td>Spring MVC Architecture</td><td>https://learning.oreilly.com/videos/spring-mvc-for/9781789139341/</td><td>Chapitre 1, chapitre 2 et chapitre 3 jusqu'à Step 13: Part 2 - Theory Break -&nbsp;</td></tr><tr><td>Spring Rest</td><td>https://learning.oreilly.com/library/view/spring-rest/9781484208236/9781484208243_Ch01.xhtml</td><td>&nbsp;</td></tr><tr><td>Restful Web APIs</td><td>https://www.safaribooksonline.com/library/view/restful-web-apis/9780133890204/</td><td>Les sections 4 à 9</td></tr><tr><td>Spring Boot</td><td>https://learning.oreilly.com/videos/restful-web-apis/9780133890204</td><td>&nbsp;Introduction et Spring Boot manual configuration</td></tr><tr><td>Junit</td><td>https://learning.oreilly.com/videos/learn-java-unit/9781789340648</td><td>&nbsp;</td></tr><tr><td>Jenkins Pipeline</td><td>https://learning.oreilly.com/videos/effective-jenkins-continuous/9781788477710/</td><td>&nbsp;</td></tr><tr><td>Hibernate / JPA</td><td>https://learning.oreilly.com/videos/hibernate-and-java/9781771373494/</td><td>&nbsp;</td></tr></tbody></table>
 
 ## Spring Boot
 
