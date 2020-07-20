@@ -103,7 +103,7 @@ PR Review
 
 ### Programming Paradigm
 
-<table><tbody><tr><td>AOP</td><td>Inheritance</td></tr><tr><td>Polymorphism</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+<table><tbody><tr><td>AOP</td><td>Inheritance</td></tr><tr><td>Polymorphism</td><td>Abstraction&nbsp;</td></tr><tr><td>&nbsp;Encapsulation</td><td>&nbsp;</td></tr></tbody></table>
 
 ## Spring Boot
 
