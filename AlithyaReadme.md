@@ -1,28 +1,28 @@
 Welcome to my Java Learning Program for Desjardins
 
-- [Welcome](#welcome)
-  * [About Desjardins](#about-desjardins)
-  * [About the project](#about-the-project)
-    + [Team](#team)
-- [Software to install](#software-to-install)
-    + [Intellij Idea](#intellij-idea)
-    + [Eclipse](#eclipse)
-- [Best Practices and Best Links](#best-practices-and-best-links)
-- [Learning](#learning)
-  * [SCRUM](#scrum)
-  * [GIT](#git)
-  * [Devops](#devops)
-  * [Learning Program](#learning-program)
-    + [Java 8](#java-8)
-  * [Spring Boot](#spring-boot)
-  * [HTML / CSS / Javascript](#html---css---javascript)
-  * [Angular](#angular)
-  * [Tests](#tests)
-- [Documentations](#documentations)
-- [Social](#social)
-- [Coding Dojo](#coding-dojo)
-- [Certifications](#certifications)
-- [My Spring Legacy MVPs](#my-spring-legacy-mvps)
+*   [Welcome](#welcome)
+    *   [About Desjardins](#about-desjardins)
+    *   [About the project](#about-the-project)
+        *   [Team](#team)
+*   [Software to install](#software-to-install)
+    *   [Intellij Idea](#intellij-idea)
+    *   [Eclipse](#eclipse)
+*   [Best Practices and Best Links](#best-practices-and-best-links)
+*   [Learning](#learning)
+    *   [SCRUM](#scrum)
+    *   [GIT](#git)
+    *   [Devops](#devops)
+    *   [Learning Program](#learning-program)
+        *   [Java 8](#java-8)
+    *   [Spring Boot](#spring-boot)
+    *   [HTML / CSS / Javascript](#html---css---javascript)
+    *   [Angular](#angular)
+    *   [Tests](#tests)
+*   [Documentations](#documentations)
+*   [Social](#social)
+*   [Coding Dojo](#coding-dojo)
+*   [Certifications](#certifications)
+*   [My Spring Legacy MVPs](#my-spring-legacy-mvps)
 
 # Welcome
 
@@ -78,11 +78,21 @@ Welcome to my Java Learning Program for Desjardins
 *   SonarQube + SonarCloud + Sonar Lint
 *   BitBucket
 
-## Learning Program
+# Learning Program
 
 ### Java 8
 
 <table><tbody><tr><td>Java SE 8</td><td>https://learning.oreilly.com/library/view/java-se-8/9780133430202/ch01.html</td><td>&nbsp;</td></tr><tr><td>Date and Time API</td><td>https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch03.xhtml</td><td>&nbsp;</td></tr><tr><td>Streams API</td><td>https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch05.xhtml</td><td>&nbsp;</td></tr><tr><td>Maven</td><td>https://learning.oreilly.com/videos/getting-started-with/9781782165729</td><td>&nbsp;</td></tr><tr><td>Spring Core</td><td>https://www.youtube.com/watch?v=K43qyHJXmWI</td><td>&nbsp;</td></tr><tr><td>Spring Data</td><td>https://learning.oreilly.com/videos/spring-data-for/9781771375924/9781771375924-video239728</td><td>Course Overview<br>jusqu'à : Additional Query Techniques</td></tr><tr><td>Web Services</td><td>https://learning.oreilly.com/library/view/understanding-web-services/0201750813/</td><td>Chapitre 1, chapitre 3 et 4&nbsp;</td></tr><tr><td>Web Services</td><td>https://learning.oreilly.com/library/view/spring-rest/9781484208236/</td><td>Spring Rest: Chapitre 1</td></tr><tr><td>Web Services</td><td>https://learning.oreilly.com/videos/restful-web-apis/9780133890204</td><td>Sections 4, 6, 7 et 8</td></tr><tr><td>Spring MVC Architecture</td><td>https://learning.oreilly.com/videos/spring-mvc-for/9781789139341/</td><td>Chapitre 1, chapitre 2 et chapitre 3 jusqu'à&nbsp;<br>Step 13: Part 2 - Theory Break -&nbsp;</td></tr><tr><td>Spring Rest</td><td>https://learning.oreilly.com/library/view/spring-rest/9781484208236/9781484208243_Ch01.xhtml</td><td>&nbsp;</td></tr><tr><td>Restful Web APIs</td><td>https://www.safaribooksonline.com/library/view/restful-web-apis/9780133890204/</td><td>Les sections 4 à 9</td></tr><tr><td>Spring Boot</td><td>https://learning.oreilly.com/videos/restful-web-apis/9780133890204</td><td>Introduction<br>Spring Boot manual configuration</td></tr><tr><td>Junit</td><td>https://learning.oreilly.com/videos/learn-java-unit/9781789340648</td><td>&nbsp;</td></tr><tr><td>Jenkins Pipeline</td><td>https://learning.oreilly.com/videos/effective-jenkins-continuous/9781788477710/</td><td>&nbsp;</td></tr><tr><td>Hibernate / JPA</td><td>https://learning.oreilly.com/videos/hibernate-and-java/9781771373494/</td><td>&nbsp;</td></tr><tr><td>Git</td><td>https://learning.oreilly.com/videos/essential-git/200000006A0403</td><td>&nbsp;</td></tr></tbody></table>
+
+## Object-Oriented Principles
+
+### Design Patterns
+
+<table><tbody><tr><td><strong>structural</strong></td><td><strong>Singleton</strong></td></tr><tr><td><strong>Creational</strong></td><td>Prototype</td></tr><tr><td><strong>Builder</strong></td><td>Adapter</td></tr><tr><td>Factorty</td><td>Bridge</td></tr></tbody></table>
+
+### Programming Paradigm
+
+*   AOP
 
 ## Spring Boot
 
