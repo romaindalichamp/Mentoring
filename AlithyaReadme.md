@@ -92,7 +92,7 @@ Welcome to my Java Learning Program for Desjardins
 
 ### Programming Paradigm
 
-*   AOP
+<table><tbody><tr><td>AOP</td><td>Inheritance</td></tr><tr><td>Polymorphism</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
 
 ## Spring Boot
 
