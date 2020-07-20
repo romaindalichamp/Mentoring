@@ -113,7 +113,7 @@ PR Review
 
 <table><tbody><tr><td>HTML</td><td>https://www.w3schools.com/html/default.asp</td></tr><tr><td>CSS</td><td>https://getbootstrap.com/docs/4.5/getting-started/introduction/</td></tr><tr><td>Javascript</td><td>https://www.w3schools.com/js/default.asp</td></tr></tbody></table>
 
-## Angular
+## Angular 8
 
 *   https://www.simplilearn.com/angularjs-vs-angular-2-vs-angular-4-differences-article
 
