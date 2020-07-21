@@ -38,7 +38,7 @@ Welcome to my Java Learning Program for Desjardins
 
 ## About the project
 
-<table><tbody><tr><td>Confluence</td><td>https://alithya.atlassian.net/wiki/spaces/OMA/overview?homepageId=1167425737</td></tr></tbody></table>
+<table><tbody><tr><td>Confluence</td><td>https://alithya.atlassian.net/wiki/spaces/OMA/overview?homepageId=1167425737</td></tr><tr><td>Architecture</td><td>https://alithya.atlassian.net/wiki/spaces/OMA/pages/1177911476/Sch+ma+d+architecture</td></tr></tbody></table>
 
 ### Team
 
