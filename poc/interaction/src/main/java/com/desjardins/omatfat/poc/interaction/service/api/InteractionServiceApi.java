@@ -1,4 +1,4 @@
-package com.desjardins.omatfat.poc.interaction.service;
+package com.desjardins.omatfat.poc.interaction.service.api;
 
 import com.desjardins.omatfat.poc.interaction.dto.InteractionDto;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
  * <p>
  * Contient toutes les méthodes publiques de son implémentation
  */
-public interface InteractionServiceInterface {
+public interface InteractionServiceApi {
     InteractionDto getInteractionEntity(Long id);
     List<InteractionDto> getAllInteractionEntity();
     InteractionDto addInteractionEntity(InteractionDto interactionEntity);

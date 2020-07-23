@@ -1,12 +1,10 @@
 package com.desjardins.omatfat.poc.metier.controller;
 
 import com.desjardins.omatfat.poc.metier.entity.MetierEntity;
-import com.desjardins.omatfat.poc.metier.service.MetierServiceImplementation;
-import com.desjardins.omatfat.poc.metier.service.MetierServiceInterface;
+import com.desjardins.omatfat.poc.metier.service.api.MetierServiceApi;
 import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,14 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Romain DALICHAMP - romain.dalichamp@alithya.com
  * <p>
  */
-@Controller
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("metiers")
 public class MetierController {
 
-    //@Autowired est remplacé par ==> @RequiredArgsConstructor de Lombok
-    private final MetierServiceInterface metierServiceInterface;
+    // @Autowired est remplacé par ==> @RequiredArgsConstructor de Lombok
+    // Important: "final" pour que Spring fasse l'injection de dépendance dans le constructeur
+    // permet d'avoir les exceptions dès l'initialisation de la classe
+    private final MetierServiceApi metierServiceInterface;
 
     @GetMapping("{id}")
     public Optional<MetierEntity> getMetierEntity(@PathVariable Long id) {
