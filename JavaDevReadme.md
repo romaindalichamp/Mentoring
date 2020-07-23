@@ -125,6 +125,10 @@ PR Review
 *   TDD
 *   BDD
 
+# Proof Of Concept du projet : Angular 8 + Spring Boot + Spring Boot
+
+*   https://github.com/fukakai/Mentoring/tree/master/poc
+
 # Documentations
 
 <table><tbody><tr><td>Java 8 API</td><td>https://docs.oracle.com/javase/8/docs/api/</td></tr><tr><td>Angular</td><td>https://angular.io/tutorial/toh-pt0</td></tr><tr><td>Spring</td><td>https://docs.spring.io/spring/docs/current/spring-framework-reference/</td></tr><tr><td>Junit Jupiter</td><td>https://junit.org/junit5/docs/current/user-guide/#writing-tests</td></tr></tbody></table>
@@ -141,6 +145,8 @@ PR Review
 
 <table><tbody><tr><td>Java 8: two exams&nbsp;</td><td>https://education.oracle.com/fr/oracle-certified-professional-java-se-8-programmer/trackp_357</td><td>1Z0-808 + 1Z0-809</td></tr><tr><td>Spring</td><td>https://tanzu.vmware.com/training/certification/spring-professional-certification</td><td>&nbsp;</td></tr></tbody></table>
 
-# My Spring Legacy MVPs
+# Lectures
 
-*   https://github.com/fukakai/MVPs/tree/master/Java/Spring%20Legacy
+*   Clean Code 
+    *   Amazon: https://www.amazon.ca/-/fr/Robert-C-Martin/dp/0132350882
+    *   PDF: me demander le lien
