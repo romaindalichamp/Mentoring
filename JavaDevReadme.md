@@ -122,6 +122,7 @@ PR Review
 *   QA: Askida CT
 *   TDD
 *   BDD
+*   Coverage with Jacoco
 
 # Proof Of Concept du projet : Angular 8 + Spring Boot + Spring Boot
 
