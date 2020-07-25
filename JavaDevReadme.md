@@ -1,7 +1,6 @@
-Welcome to my Java Learning Program for Desjardins
+Welcome to my Java Learning Program
 
 *   [Welcome](#welcome)
-    *   [About Desjardins](#about-desjardins)
     *   [About the project](#about-the-project)
         *   [Team](#team)
 *   [Software to install](#software-to-install)
@@ -11,30 +10,29 @@ Welcome to my Java Learning Program for Desjardins
 *   [Learning](#learning)
     *   [SCRUM](#scrum)
     *   [GIT](#git)
+        *   [Pull Request](#pull-request)
     *   [Devops](#devops)
-    *   [Learning Program](#learning-program)
-        *   [Java 8](#java-8)
-    *   [Spring Boot](#spring-boot)
-    *   [HTML / CSS / Javascript](#html---css---javascript)
-    *   [Angular](#angular)
-    *   [Tests](#tests)
+*   [Learning Program](#learning-program)
+    *   [Java 8](#java-8)
+        *   [Object-Oriented Principles](#object-oriented-principles)
+    *   [Design Patterns](#design-patterns)
+    *   [Programming Paradigm](#programming-paradigm)
+        *   [Spring Boot](#spring-boot)
+        *   [HTML / CSS / Javascript](#html---css---javascript)
+        *   [Angular 8](#angular-8)
+        *   [Tests](#tests)
+*   [Proof Of Concept du projet : Angular 8 + Spring Boot + Spring Boot](#proof-of-concept-du-projet---angular-8---spring-boot---spring-boot)
 *   [Documentations](#documentations)
 *   [Social](#social)
 *   [Coding Dojo](#coding-dojo)
 *   [Certifications](#certifications)
-*   [My Spring Legacy MVPs](#my-spring-legacy-mvps)
+*   [Lectures](#lectures)
 
 # Welcome
 
 *   Questions about Alithya ?
 *   About me
 *   Group Presentation
-
-## About Desjardins
-
-*   https://www.desjardins.com/
-*   Security Check
-*   Liferay - Framework 6.2 + JBoss ou 7 ?
 
 ## About the project
 
@@ -85,7 +83,7 @@ PR Review
 ## Devops
 
 *   Jenkins
-*   Github / Gitlab
+*   Github / Bitbucket / Gitlab
 *   SonarQube + SonarCloud + Sonar Lint
 *   BitBucket
 
@@ -124,6 +122,11 @@ PR Review
 *   QA: Askida CT
 *   TDD
 *   BDD
+*   Coverage with Jacoco
+
+# Proof Of Concept du projet : Angular 8 + Spring Boot + Spring Boot
+
+*   https://github.com/fukakai/Mentoring/tree/master/poc
 
 # Documentations
 
@@ -141,6 +144,8 @@ PR Review
 
 <table><tbody><tr><td>Java 8: two exams&nbsp;</td><td>https://education.oracle.com/fr/oracle-certified-professional-java-se-8-programmer/trackp_357</td><td>1Z0-808 + 1Z0-809</td></tr><tr><td>Spring</td><td>https://tanzu.vmware.com/training/certification/spring-professional-certification</td><td>&nbsp;</td></tr></tbody></table>
 
-# My Spring Legacy MVPs
+# Lectures
 
-*   https://github.com/fukakai/MVPs/tree/master/Java/Spring%20Legacy
+*   Clean Code
+    *   Amazon: https://www.amazon.ca/-/fr/Robert-C-Martin/dp/0132350882
+    *   PDF: me demander le lien
