@@ -49,7 +49,7 @@ Welcome to my Java Learning Program
 
 ### Intellij Idea
 
-<table><tbody><tr><td>Google Java Format</td><td>https://github.com/google/google-java-format</td></tr><tr><td>Plugins</td><td>SonarLint +Lombok + CodeGlance + PlantUML</td></tr></tbody></table>
+<table><tbody><tr><td>Google Java Format</td><td>https://github.com/google/google-java-format</td></tr><tr><td>Plugins</td><td><strong>SonarLint +Lombok + CodeGlance + PlantUML</strong></td></tr></tbody></table>
 
 ### Eclipse
 
@@ -67,24 +67,40 @@ Welcome to my Java Learning Program
 
 ## GIT
 
-<table><tbody><tr><td>Cheat Sheet</td><td>https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf</td></tr><tr><td>Practice</td><td>https://learngitbranching.js.org/?locale=fr_FR</td></tr><tr><td>Branching</td><td>https://nvie.com/posts/a-successful-git-branching-model/</td></tr></tbody></table>
+Where ....
 
-### Pull Request
+*   **Local** \= the local repository on each developer computer
+*   **Origin** \= distant "dev"repository shared between each developer
 
-*   \< 300 Lignes
-*   Give Positive Comments
+### Local
 
-PR Review
+1.  Create a branch for each new _"Epic > User Story > Task"_ named as _"theNewBranchNamedWIthTaskReferenceNumber"_
+2.  Commit + Commit + Commit
+3.  Pull
+    1.  Merge in local if necessary
+    2.  Commit if a merge happened
+4.  Push the branch with all the commits on "Origin"
+
+### Origin
+
+1.  Create a Pull Request from _"theNewBranchNamedWIthTaskReferenceNumber"_ to _"dev"_
+    *   each Pull Request should be \< 300 Lignes
+2.  Review another Pull Request pending Peer Review
+
+### Pull Request Review 
 
 *   Architecture
 *   Implémentation
-*   Maintenability
+*   Maintenability / Reusability
+*   Give Positive Comments
+
+<table><tbody><tr><td>Cheat Sheet</td><td>https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf</td></tr><tr><td>Practice</td><td>https://learngitbranching.js.org/?locale=fr_FR</td></tr><tr><td>Branching</td><td>https://nvie.com/posts/a-successful-git-branching-model/</td></tr></tbody></table>
 
 ## Devops
 
-*   Jenkins
-*   Github / Bitbucket / Gitlab
-*   SonarQube + SonarCloud + Sonar Lint
+*   **Jenkins**
+*   Github / **Bitbucket** / Gitlab
+*   **SonarQube** \+ SonarCloud + **Sonar Lint**
 *   BitBucket
 
 # Learning Program
