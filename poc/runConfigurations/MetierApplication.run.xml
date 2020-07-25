@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="MetierApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <module name="metier" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.desjardins.omatfat.poc.metier.MetierApplication" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="MetierApplication" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <method v="2">
       <option name="Make" enabled="true" />
