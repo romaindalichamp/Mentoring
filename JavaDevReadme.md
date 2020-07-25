@@ -83,7 +83,7 @@ PR Review
 ## Devops
 
 *   Jenkins
-*   Github / Gitlab
+*   Github / Bitbucket / Gitlab
 *   SonarQube + SonarCloud + Sonar Lint
 *   BitBucket
 
