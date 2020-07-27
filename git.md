@@ -55,6 +55,8 @@ git push origin theNewBranchNamedWIthTaskReferenceNumber
 
 # Create Pull Request
 
+On the choosen devops software, for now GitHub [https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+
 *   Create a **Pull Request** from _"theNewBranchNamedWIthTaskReferenceNumber"_ to _"dev"_
     *   each Pull Request should be \< 300 Lignes
 *   then, review another Pull Request pending validation !
