@@ -13,13 +13,13 @@
 git checkout -b theNewBranchNamedWIthTaskReferenceNumber
 ```
 
-*   **Commit** \+ Commit + Commit _.... (IntellijIdea ==> CTRL+K)_
+*   **Commit** + Commit + Commit _...._
 
 ```
 git commit -m "this message to explain my commit"
 ```
 
-*   **Pull** _(IntellijIdea ==> CTRL+T) from_
+*   **Pull** _from_
     1.  **Merge** in local if necessary
     2.  Commit if a merge happened
 
@@ -27,7 +27,7 @@ git commit -m "this message to explain my commit"
 git pull origin theNewBranchNamedWIthTaskReferenceNumber
 ```
 
-*   **Push** _(IntellijIdea ==> CTRL+Shift+K)_ the branch with all the commits on "Origin"
+*   **Push** the branch with all the commits on "Origin"
 
 ```
 git push origin theNewBranchNamedWIthTaskReferenceNumber
@@ -35,7 +35,7 @@ git push origin theNewBranchNamedWIthTaskReferenceNumber
 
 ## 2\. Origin/dev
 
-*   Assuming we are currently working on "**theNewBranchNamedWIthTaskReferenceNumber**", if not: 
+*   Assuming we are currently working on "**theNewBranchNamedWIthTaskReferenceNumber**", if not:
 
 ```
 git checkout theNewBranchNamedWIthTaskReferenceNumber
