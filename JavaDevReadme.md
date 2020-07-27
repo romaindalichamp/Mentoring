@@ -45,7 +45,7 @@ Welcome to my Java Learning Program
 
 # Software to install
 
-<table><tbody><tr><td>Git</td><td>https://git-scm.com/download/win</td></tr><tr><td>Postman</td><td>https://www.postman.com/downloads/</td></tr><tr><td>Putty</td><td>https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</td></tr><tr><td>Zoom</td><td>https://zoom.us/download</td></tr><tr><td>Teams</td><td>https://www.microsoft.com/fr-ca/microsoft-365/microsoft-teams/download-app</td></tr></tbody></table>
+<table><tbody><tr><td>Open JDK 1.8</td><td><a href="https://adoptopenjdk.net/?variant=openjdk8&amp;jvmVariant=hotspot">https://adoptopenjdk.net/?variant=openjdk8&amp;jvmVariant=hotspot</a></td></tr><tr><td>Intellij Idea</td><td>https://www.jetbrains.com/fr-fr/idea/download/#section=windows</td></tr><tr><td>Git</td><td>https://git-scm.com/download/win</td></tr><tr><td>Postman</td><td>https://www.postman.com/downloads/</td></tr><tr><td>Putty</td><td>https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</td></tr><tr><td>Zoom</td><td>https://zoom.us/download</td></tr><tr><td>Teams</td><td>https://www.microsoft.com/fr-ca/microsoft-365/microsoft-teams/download-app</td></tr><tr><td>NotePad++</td><td>https://notepad-plus-plus.org/downloads/v7.8.9/ + plugin JSTools</td></tr></tbody></table>
 
 ### Intellij Idea
 
@@ -67,32 +67,7 @@ Welcome to my Java Learning Program
 
 ## GIT
 
-Where ....
-
-*   **Local** = the local repository on each developer computer
-*   **Origin** = distant "dev"repository shared between each developer
-
-### Local
-
-1.  Create a branch for each new _"Epic > User Story > Task"_ named as _"theNewBranchNamedWIthTaskReferenceNumber"_
-2.  Commit + Commit + Commit
-3.  Pull
-    1.  Merge in local if necessary
-    2.  Commit if a merge happened
-4.  Push the branch with all the commits on "Origin"
-
-### Origin
-
-1.  Create a Pull Request from _"theNewBranchNamedWIthTaskReferenceNumber"_ to _"dev"_
-    *   each Pull Request should be \< 300 Lignes
-2.  Review another Pull Request pending Peer Review
-
-### Pull Request Review
-
-*   Architecture
-*   Implémentation
-*   Maintenability / Reusability
-*   Give Positive Comments
+How to use Git on our Project: https://github.com/fukakai/Mentoring/new/master
 
 <table><tbody><tr><td>Cheat Sheet</td><td>https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf</td></tr><tr><td>Practice</td><td>https://learngitbranching.js.org/?locale=fr_FR</td></tr><tr><td>Branching</td><td>https://nvie.com/posts/a-successful-git-branching-model/</td></tr></tbody></table>
 
@@ -100,7 +75,7 @@ Where ....
 
 *   **Jenkins**
 *   Github / **Bitbucket** / Gitlab
-*   **SonarQube** + SonarCloud + **Sonar Lint**
+*   **SonarQube** + SonarCloud + **Sonar Lint + Jacoco**
 *   BitBucket
 
 # Learning Program
@@ -138,7 +113,7 @@ Where ....
 *   QA: Askida CT
 *   TDD
 *   BDD
-*   Coverage with Jacoco
+*   Coverage with **Jacoco**
 
 # Proof Of Concept du projet : Angular 8 + Spring Boot + Spring Boot
 
