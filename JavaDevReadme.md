@@ -104,7 +104,7 @@ How to use Git on our Project: https://github.com/fukakai/Mentoring/new/master
 
 ## Angular 8
 
-*   https://www.simplilearn.com/angularjs-vs-angular-2-vs-angular-4-differences-article
+*   https://www.udemy.com/course/complete-angular-indepth-easy/learn/lecture/14545136?start=0#overview
 
 ## Tests
 
