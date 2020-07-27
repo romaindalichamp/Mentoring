@@ -67,7 +67,7 @@ Welcome to my Java Learning Program
 
 ## GIT
 
-How to use Git on our Project: https://github.com/fukakai/Mentoring/new/master
+A complete tutorial about how we are going to work with Git as a team https://github.com/fukakai/Mentoring/new/master
 
 <table><tbody><tr><td>Cheat Sheet</td><td>https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf</td></tr><tr><td>Practice</td><td>https://learngitbranching.js.org/?locale=fr_FR</td></tr><tr><td>Branching</td><td>https://nvie.com/posts/a-successful-git-branching-model/</td></tr></tbody></table>
 
