@@ -1,14 +1,9 @@
-\- \[Main Road Map\](#main-road-map)
-
- \* \[1\\. Local\](#1--local)
-
- \* \[2\\. Origin/dev\](#2--origin-dev)
-
-\- \[Create Pull Request\](#create-pull-request)
-
-\- \[Pull Request Peer Review\](#pull-request-peer-review)
-
-\- \[IntellijShortcuts\](#intellijshortcuts)
+- [Main Road Map](#main-road-map)
+  * [1\. Local](#1--local)
+  * [2\. Origin/dev](#2--origin-dev)
+- [Create Pull Request](#create-pull-request)
+- [Pull Request Peer Review](#pull-request-peer-review)
+- [IntellijShortcuts](#intellijshortcuts)
 
 <table><tbody><tr><td>Cheat Sheet</td><td>https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf</td></tr><tr><td>Practice</td><td>https://learngitbranching.js.org/?locale=fr_FR</td></tr><tr><td>Branching</td><td>https://nvie.com/posts/a-successful-git-branching-model/</td></tr></tbody></table>
 
