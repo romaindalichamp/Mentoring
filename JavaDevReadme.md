@@ -69,8 +69,8 @@ Welcome to my Java Learning Program
 
 Where ....
 
-*   **Local** \= the local repository on each developer computer
-*   **Origin** \= distant "dev"repository shared between each developer
+*   **Local** = the local repository on each developer computer
+*   **Origin** = distant "dev"repository shared between each developer
 
 ### Local
 
@@ -87,7 +87,7 @@ Where ....
     *   each Pull Request should be \< 300 Lignes
 2.  Review another Pull Request pending Peer Review
 
-### Pull Request Review 
+### Pull Request Review
 
 *   Architecture
 *   Implémentation
@@ -100,7 +100,7 @@ Where ....
 
 *   **Jenkins**
 *   Github / **Bitbucket** / Gitlab
-*   **SonarQube** \+ SonarCloud + **Sonar Lint**
+*   **SonarQube** + SonarCloud + **Sonar Lint**
 *   BitBucket
 
 # Learning Program
