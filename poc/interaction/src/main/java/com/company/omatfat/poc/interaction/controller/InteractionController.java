@@ -53,7 +53,7 @@ public class InteractionController {
     }
 
     @DeleteMapping("{id}") // ---/interactions/1
-    public void UpdateInteractionEntity(@PathVariable Long id) {
+    public void deleteInteractionEntity(@PathVariable Long id) {
         interactionServiceInterface.deleteInteractionEntity(id);
     }
 }
