@@ -49,7 +49,7 @@ public class MetierController {
     }
 
     @DeleteMapping("{id}")
-    public void UpdateMetierEntity(@PathVariable Long id) {
+    public void deleteMetierEntity(@PathVariable Long id) {
         metierServiceInterface.deleteMetierEntity(id);
     }
 }
