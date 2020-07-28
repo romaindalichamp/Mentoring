@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class UserRestClient extends RestTemplate {
 
-    public static final String jsonUri = "metiers/";
+    public static final String jsonUri = "users/";
 
     @Value("${company.omafat.poc.metier.url}")
     private String metierUrl;
