@@ -28,14 +28,14 @@ public class UserServiceImpl implements UserServiceApi {
         return userRestClient.getAllUserDto();
     }
 
-    public UserDto addUserDto(UserDto interactionEntity) {
+    public UserDto addUserDto(UserDto userDto) {
         // Business rules
-        return userRestClient.addUserDto(interactionEntity);
+        return userRestClient.addUserDto(userDto);
     }
 
-    public UserDto updateUserDto(UserDto interactionEntity) {
+    public UserDto updateUserDto(UserDto userDto) {
         // Business rules
-        return userRestClient.updateUserDto(interactionEntity);
+        return userRestClient.updateUserDto(userDto);
     }
 
     public void deleteUserDto(Long id) {

@@ -33,9 +33,9 @@ public class UserRestClient extends RestTemplate {
         return postForObject(metierUrl + jsonUri, userDto, UserDto.class);
     }
 
-    public UserDto updateUserDto(UserDto interactionEntity) {
-        put(metierUrl + jsonUri, interactionEntity);
-        return getUserDto(interactionEntity.getId());
+    public UserDto updateUserDto(UserDto userDto) {
+        put(metierUrl + jsonUri, userDto);
+        return getUserDto(userDto.getId());
     }
 
     public void deleteUserDto(Long id) {

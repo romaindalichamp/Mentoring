@@ -11,7 +11,7 @@ import java.util.List;
 public interface UserServiceApi {
     UserDto getUserDto(Long id);
     List<UserDto> getAllUserDto();
-    UserDto addUserDto(UserDto interactionEntity);
-    UserDto updateUserDto(UserDto interactionEntity);
+    UserDto addUserDto(UserDto userDto);
+    UserDto updateUserDto(UserDto userDto);
     void deleteUserDto(Long id);
 }
