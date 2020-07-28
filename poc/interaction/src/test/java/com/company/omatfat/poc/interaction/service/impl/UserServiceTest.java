@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  * <p>
  */
 @SpringBootTest
-public class UserServiceImplTest {
+public class UserServiceTest {
     /*
         /!\ ----- Test name = ClassNameTest                                /!\
         /!\ ----- SERVICES are the only revelent classes to be Unit Test   /!\
@@ -21,7 +21,7 @@ public class UserServiceImplTest {
      */
 
     @Autowired
-    UserServiceApi interactionService;
+    UserServiceApi userService;
 
     @Test
     @DisplayName("GIVEN fake InteractionDto WHEN i get by id THEN i expect the correct infos")
@@ -31,10 +31,10 @@ public class UserServiceImplTest {
         userDto.setFirstName("Anthony");
         userDto.setLastName("Stark");
         userDto.setOld(50);
-        UserDto myInteractionDtoCreated = interactionService.addUserDto(userDto);
+        UserDto myInteractionDtoCreated = userService.addUserDto(userDto);
 
         // WHEN - method to test
-        UserDto myResult = interactionService.getUserDto(
+        UserDto myResult = userService.getUserDto(
                 myInteractionDtoCreated.getId()
         );
 
@@ -44,6 +44,6 @@ public class UserServiceImplTest {
         Assertions.assertTrue(myResult.getOld().equals(50));
 
         // FINALLY - clean
-        interactionService.deleteUserDto(myInteractionDtoCreated.getId());
+        userService.deleteUserDto(myInteractionDtoCreated.getId());
     }
 }
