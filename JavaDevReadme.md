@@ -45,7 +45,7 @@ Welcome to my Java Learning Program
 
 # Software to install
 
-<table><tbody><tr><td>Git</td><td>https://git-scm.com/download/win</td></tr><tr><td>Postman</td><td>https://www.postman.com/downloads/</td></tr><tr><td>Putty</td><td>https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</td></tr><tr><td>Zoom</td><td>https://zoom.us/download</td></tr><tr><td>Teams</td><td>https://www.microsoft.com/fr-ca/microsoft-365/microsoft-teams/download-app</td></tr></tbody></table>
+<table><tbody><tr><td>Open JDK 1.8</td><td><p><a href="https://adoptopenjdk.net/?variant=openjdk8&amp;jvmVariant=hotspot">https://adoptopenjdk.net/?variant=openjdk8&amp;jvmVariant=hotspot</a></p><ul><li>Unzip and place into “C:\Program Files\Java”</li><li>Add Environment Var to Path with “C:\Program Files\Java\{ javaversion}\bin”</li></ul></td></tr><tr><td>Intellij Idea</td><td><a href="https://www.jetbrains.com/fr-fr/idea/download/#section=windows">https://www.jetbrains.com/fr-fr/idea/download/#section=windows</a></td></tr><tr><td>Git</td><td><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></td></tr><tr><td>Postman</td><td><a href="https://www.postman.com/downloads/">https://www.postman.com/downloads/</a></td></tr><tr><td>Putty</td><td><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</a></td></tr><tr><td>Zoom</td><td><a href="https://zoom.us/download">https://zoom.us/download</a></td></tr><tr><td>Teams</td><td><a href="https://www.microsoft.com/fr-ca/microsoft-365/microsoft-teams/download-app">https://www.microsoft.com/fr-ca/microsoft-365/microsoft-teams/download-app</a></td></tr><tr><td>NotePad++</td><td><a href="https://notepad-plus-plus.org/downloads/v7.8.9/">https://notepad-plus-plus.org/downloads/v7.8.9/</a> + plugin JSTools</td></tr><tr><td>Sonar-Scanner</td><td><p><a href="https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/">https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/</a></p><ul><li>Unzip and place into “C:\Program Files\Sonar”</li><li>Add Environment Var to Path with “C:\Program Files\Sonar\{ sonarscannerversion}\bin”</li></ul></td></tr></tbody></table>
 
 ### Intellij Idea
 
@@ -67,32 +67,7 @@ Welcome to my Java Learning Program
 
 ## GIT
 
-Where ....
-
-*   **Local** = the local repository on each developer computer
-*   **Origin** = distant "dev"repository shared between each developer
-
-### Local
-
-1.  Create a branch for each new _"Epic > User Story > Task"_ named as _"theNewBranchNamedWIthTaskReferenceNumber"_
-2.  Commit + Commit + Commit
-3.  Pull
-    1.  Merge in local if necessary
-    2.  Commit if a merge happened
-4.  Push the branch with all the commits on "Origin"
-
-### Origin
-
-1.  Create a Pull Request from _"theNewBranchNamedWIthTaskReferenceNumber"_ to _"dev"_
-    *   each Pull Request should be \< 300 Lignes
-2.  Review another Pull Request pending Peer Review
-
-### Pull Request Review
-
-*   Architecture
-*   Implémentation
-*   Maintenability / Reusability
-*   Give Positive Comments
+A complete tutorial about how we are going to work with Git as a team https://github.com/fukakai/Mentoring/new/master
 
 <table><tbody><tr><td>Cheat Sheet</td><td>https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf</td></tr><tr><td>Practice</td><td>https://learngitbranching.js.org/?locale=fr_FR</td></tr><tr><td>Branching</td><td>https://nvie.com/posts/a-successful-git-branching-model/</td></tr></tbody></table>
 
@@ -100,14 +75,14 @@ Where ....
 
 *   **Jenkins**
 *   Github / **Bitbucket** / Gitlab
-*   **SonarQube** + SonarCloud + **Sonar Lint**
+*   **SonarQube** + SonarCloud + **Sonar Lint + Jacoco**
 *   BitBucket
 
 # Learning Program
 
 ### Java 8
 
-<table><tbody><tr><td>Java SE 8</td><td>https://learning.oreilly.com/library/view/java-se-8/9780133430202/ch01.html</td><td>&nbsp;</td></tr><tr><td>Date and Time API</td><td>https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch03.xhtml</td><td>&nbsp;</td></tr><tr><td>Streams API</td><td>https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch05.xhtml</td><td>&nbsp;</td></tr><tr><td>Maven</td><td>https://learning.oreilly.com/videos/getting-started-with/9781782165729</td><td>&nbsp;</td></tr><tr><td>Spring Core</td><td>https://www.youtube.com/watch?v=K43qyHJXmWI</td><td>&nbsp;</td></tr><tr><td>Spring Data</td><td>https://learning.oreilly.com/videos/spring-data-for/9781771375924/9781771375924-video239728</td><td>Course Overview<br>jusqu'à : Additional Query Techniques</td></tr><tr><td>Web Services</td><td>https://learning.oreilly.com/library/view/understanding-web-services/0201750813/</td><td>Chapitre 1, chapitre 3 et 4&nbsp;</td></tr><tr><td>Web Services</td><td>https://learning.oreilly.com/library/view/spring-rest/9781484208236/</td><td>Spring Rest: Chapitre 1</td></tr><tr><td>Web Services</td><td>https://learning.oreilly.com/videos/restful-web-apis/9780133890204</td><td>Sections 4, 6, 7 et 8</td></tr><tr><td>Spring MVC Architecture</td><td>https://learning.oreilly.com/videos/spring-mvc-for/9781789139341/</td><td>Chapitre 1, chapitre 2 et chapitre 3 jusqu'à&nbsp;<br>Step 13: Part 2 - Theory Break -&nbsp;</td></tr><tr><td>Spring Rest</td><td>https://learning.oreilly.com/library/view/spring-rest/9781484208236/9781484208243_Ch01.xhtml</td><td>&nbsp;</td></tr><tr><td>Restful Web APIs</td><td>https://www.safaribooksonline.com/library/view/restful-web-apis/9780133890204/</td><td>Les sections 4 à 9</td></tr><tr><td>Spring Boot</td><td>https://learning.oreilly.com/videos/restful-web-apis/9780133890204</td><td>Introduction<br>Spring Boot manual configuration</td></tr><tr><td>Junit</td><td>https://learning.oreilly.com/videos/learn-java-unit/9781789340648</td><td>&nbsp;</td></tr><tr><td>Jenkins Pipeline</td><td>https://learning.oreilly.com/videos/effective-jenkins-continuous/9781788477710/</td><td>&nbsp;</td></tr><tr><td>Hibernate / JPA</td><td>https://learning.oreilly.com/videos/hibernate-and-java/9781771373494/</td><td>&nbsp;</td></tr><tr><td>Git</td><td>https://learning.oreilly.com/videos/essential-git/200000006A0403</td><td>&nbsp;</td></tr></tbody></table>
+<table><tbody><tr><td>&nbsp;</td><td>Link</td><td>Included Chapters</td></tr><tr><td><strong>Java SE 8</strong></td><td><a href="https://learning.oreilly.com/library/view/java-se-8/9780133430202/ch01.html">https://learning.oreilly.com/library/view/java-se-8/9780133430202/ch01.html</a></td><td>Chapter 1</td></tr><tr><td><strong>Streams API</strong></td><td><a href="https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch05.xhtml">https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch05.xhtml</a></td><td>&nbsp;</td></tr><tr><td><strong>Maven</strong></td><td><a href="https://learning.oreilly.com/videos/getting-started-with/9781782165729">https://learning.oreilly.com/videos/getting-started-with/9781782165729</a></td><td>From 1 to 4</td></tr><tr><td><strong>Date and Time eAPI</strong></td><td><a href="https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch03.xhtml#Sec14">https://learning.oreilly.com/library/view/pro-java-8/9781484206416/9781484206423_Ch03.xhtml#Sec14</a></td><td>&nbsp;</td></tr><tr><td><strong>Spring Core</strong></td><td><a href="https://www.youtube.com/watch?v=K43qyHJXmWI">https://www.youtube.com/watch?v=K43qyHJXmWI</a></td><td>&nbsp;</td></tr><tr><td>Spring MVC Architecture</td><td><a href="https://learning.oreilly.com/videos/spring-mvc-for/9781789139341/">https://learning.oreilly.com/videos/spring-mvc-for/9781789139341/</a></td><td>Chapter 1, Chapter 2 et Chapter 3 jusqu'à&nbsp;<br>Step 13: Part 2 - Theory Break -&nbsp;</td></tr><tr><td><strong>Spring Data</strong></td><td><a href="https://learning.oreilly.com/videos/spring-data-for/9781771375924/9781771375924-video239728">https://learning.oreilly.com/videos/spring-data-for/9781771375924/9781771375924-video239728</a></td><td>From: Course Overview<br>To: Additional Query Techniques</td></tr><tr><td><strong>Web Services - Introduction to REST</strong></td><td><a href="https://learning.oreilly.com/library/view/spring-rest/9781484208236/">https://learning.oreilly.com/library/view/spring-rest/9781484208236/</a></td><td>Spring Rest: Chapter 1</td></tr><tr><td><strong>RESTful Web APIs with Spring</strong></td><td><a href="https://learning.oreilly.com/videos/restful-web-apis/9780133890204">https://learning.oreilly.com/videos/restful-web-apis/9780133890204</a></td><td>Lessons 4, 6, 7 and 8</td></tr><tr><td><strong>Spring Rest</strong></td><td><a href="https://learning.oreilly.com/library/view/spring-rest/9781484208236/9781484208243_Ch01.xhtml">https://learning.oreilly.com/library/view/spring-rest/9781484208236/9781484208243_Ch01.xhtml</a></td><td>&nbsp;</td></tr><tr><td><strong>Spring Boot</strong></td><td><a href="https://learning.oreilly.com/videos/restful-web-apis/9780133890204">https://learning.oreilly.com/videos/restful-web-apis/9780133890204</a></td><td>Lesson 1.4</td></tr><tr><td><strong>Junit</strong></td><td><a href="https://learning.oreilly.com/videos/learn-java-unit/9781789340648">https://learning.oreilly.com/videos/learn-java-unit/9781789340648</a></td><td>&nbsp;</td></tr><tr><td><strong>Jenkins Pipeline</strong></td><td><a href="https://learning.oreilly.com/videos/effective-jenkins-continuous/9781788477710/">https://learning.oreilly.com/videos/effective-jenkins-continuous/9781788477710/</a></td><td>&nbsp;</td></tr><tr><td><strong>Hibernate &amp; JPA</strong></td><td><a href="https://learning.oreilly.com/videos/hibernate-and-java/9781771373494/">https://learning.oreilly.com/videos/hibernate-and-java/9781771373494/</a></td><td>&nbsp;</td></tr><tr><td>(Bonus) Web Services</td><td><a href="https://learning.oreilly.com/library/view/understanding-web-services/0201750813/">https://learning.oreilly.com/library/view/understanding-web-services/0201750813/</a></td><td>Chapitre 1, chapitre 3 et 4&nbsp;</td></tr></tbody></table>
 
 ## Object-Oriented Principles
 
@@ -129,7 +104,7 @@ Where ....
 
 ## Angular 8
 
-*   https://www.simplilearn.com/angularjs-vs-angular-2-vs-angular-4-differences-article
+*   https://www.udemy.com/course/complete-angular-indepth-easy/learn/lecture/14545136?start=0#overview
 
 ## Tests
 
@@ -138,7 +113,7 @@ Where ....
 *   QA: Askida CT
 *   TDD
 *   BDD
-*   Coverage with Jacoco
+*   Coverage with **Jacoco**
 
 # Proof Of Concept du projet : Angular 8 + Spring Boot + Spring Boot
 
