@@ -10,14 +10,14 @@ import lombok.Data;
  */
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class InteractionDto {
+public class UserDto {
 
     @JsonProperty
     private Long id;
     @JsonProperty
-    private String firstInfo;
+    private String firstName;
     @JsonProperty
-    private String secondInfo;
+    private String lastName;
     @JsonProperty
-    private String thirdInfo;
+    private Integer old;
 }

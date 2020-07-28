@@ -13,16 +13,16 @@ import lombok.Data;
  */
 @Data
 @Entity
-public class MetierEntity {
+public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column
-    private String firstInfo;
+    private String firstName;
     @Column
-    private String secondInfo;
+    private String lastName;
     @Column
-    private String thirdInfo;
+    private Integer old;
 }

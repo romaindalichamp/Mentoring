@@ -8,10 +8,6 @@ import org.springframework.boot.test.context.SpringBootTest;
  * <p>
  */
 @SpringBootTest
-public class InteractionRestClientTest {
-
-    @Test
-    void contextLoads() {
-    }
+public class UserRestClientTest {
 
 }

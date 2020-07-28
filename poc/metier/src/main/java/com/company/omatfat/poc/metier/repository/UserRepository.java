@@ -1,6 +1,6 @@
 package com.company.omatfat.poc.metier.repository;
 
-import com.company.omatfat.poc.metier.entity.MetierEntity;
+import com.company.omatfat.poc.metier.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
  * <p>
  */
 @Repository
-public interface MetierRepository extends JpaRepository<MetierEntity, Long> {
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
 }

@@ -1,7 +1,7 @@
 package com.company.omatfat.poc.metier.controller;
 
-import com.company.omatfat.poc.metier.entity.MetierEntity;
-import com.company.omatfat.poc.metier.service.api.MetierServiceApi;
+import com.company.omatfat.poc.metier.entity.UserEntity;
+import com.company.omatfat.poc.metier.service.api.UserServiceApi;
 import java.util.List;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
@@ -20,36 +20,36 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("metiers")
-public class MetierController {
+@RequestMapping("users")
+public class UserController {
 
     // @Autowired est remplacé par ==> @RequiredArgsConstructor de Lombok
     // Important: "final" pour que Spring fasse l'injection de dépendance dans le constructeur
     // permet d'avoir les exceptions dès l'initialisation de la classe
-    private final MetierServiceApi metierServiceInterface;
+    private final UserServiceApi userServiceInterface;
 
     @GetMapping("{id}")
-    public Optional<MetierEntity> getMetierEntity(@PathVariable Long id) {
-        return metierServiceInterface.getMetierEntity(id);
+    public Optional<UserEntity> getUserEntity(@PathVariable Long id) {
+        return userServiceInterface.getUserEntity(id);
     }
 
     @GetMapping
-    public List<MetierEntity> getAllMetierEntity() {
-        return metierServiceInterface.getAllMetierEntity();
+    public List<UserEntity> getAllUserEntity() {
+        return userServiceInterface.getAllUserEntity();
     }
 
     @PostMapping
-    public MetierEntity addMetierEntity(@RequestBody MetierEntity metierEntity) {
-        return metierServiceInterface.addMetierEntity(metierEntity);
+    public UserEntity addUserEntity(@RequestBody UserEntity metierEntity) {
+        return userServiceInterface.addUserEntity(metierEntity);
     }
 
     @PutMapping
-    public MetierEntity updateMetierEntity(@RequestBody MetierEntity metierEntity) {
-        return metierServiceInterface.updateMetierEntity(metierEntity);
+    public UserEntity updateUserEntity(@RequestBody UserEntity metierEntity) {
+        return userServiceInterface.updateUserEntity(metierEntity);
     }
 
     @DeleteMapping("{id}")
-    public void deleteMetierEntity(@PathVariable Long id) {
-        metierServiceInterface.deleteMetierEntity(id);
+    public void deleteUserEntity(@PathVariable Long id) {
+        userServiceInterface.deleteUserEntity(id);
     }
 }
