@@ -19,17 +19,21 @@
     "@angular/platform-browser": "~10.0.4",
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
+    "eslint": "^7.5.0",
+    "eslint-plugin-sonarjs": "^0.5.0",
     "rxjs": "~6.5.5",
+    "sonar-scanner": "^3.1.0",
     "tslib": "^2.0.0",
+    "tslint-sonarts": "^1.9.0",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.3",
     "@angular/cli": "~10.0.3",
     "@angular/compiler-cli": "~10.0.4",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
@@ -39,8 +43,9 @@
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
+    "sonarqube-scanner": "^2.7.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "typescript": "^3.9.7"
   }
 }
