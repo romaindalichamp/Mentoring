@@ -24,18 +24,18 @@ public class UserServiceTest {
     UserServiceApi userService;
 
     @Test
-    @DisplayName("GIVEN fake InteractionDto WHEN i get by id THEN i expect the correct infos")
+    @DisplayName("GIVEN fake UserDto WHEN i get by id THEN i expect the correct infos")
     void getInteractionEntity() {
         // GIVEN - Fake Data
         UserDto userDto = new UserDto();
         userDto.setFirstName("Anthony");
         userDto.setLastName("Stark");
         userDto.setOld(50);
-        UserDto myInteractionDtoCreated = userService.addUserDto(userDto);
+        UserDto myUserDtoCreated = userService.addUserDto(userDto);
 
         // WHEN - method to test
         UserDto myResult = userService.getUserDto(
-                myInteractionDtoCreated.getId()
+                myUserDtoCreated.getId()
         );
 
         // THEN - Expected Result
@@ -44,6 +44,6 @@ public class UserServiceTest {
         Assertions.assertTrue(myResult.getOld().equals(50));
 
         // FINALLY - clean
-        userService.deleteUserDto(myInteractionDtoCreated.getId());
+        userService.deleteUserDto(myUserDtoCreated.getId());
     }
 }
