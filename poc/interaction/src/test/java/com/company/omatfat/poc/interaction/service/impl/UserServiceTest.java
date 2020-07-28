@@ -25,7 +25,7 @@ public class UserServiceTest {
 
     @Test
     @DisplayName("GIVEN fake UserDto WHEN i get by id THEN i expect the correct infos")
-    void getInteractionEntity() {
+    void getUserDtoTest() {
         // GIVEN - Fake Data
         UserDto userDto = new UserDto();
         userDto.setFirstName("Anthony");
