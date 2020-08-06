@@ -1,6 +1,7 @@
 package com.company.omatfat.poc.metier.repository;
 
 import com.company.omatfat.poc.metier.entity.UserEntity;
+import javax.persistence.EntityNotFoundException;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

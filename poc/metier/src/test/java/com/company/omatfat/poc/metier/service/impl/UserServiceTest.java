@@ -14,7 +14,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 /**
  * @author Romain DALICHAMP - romain.dalichamp@alithya.com
  * <p>
- * TODO: Write Description
  */
 @SpringBootTest
 public class UserServiceTest {

@@ -27,7 +27,7 @@ public class UserServiceTest {
 
     @Test
     @DisplayName("GIVEN fake UserDto WHEN i get by id THEN i expect the correct infos")
-    void addAndGetUserDtoTest() {
+    void addAndGetUserDtoTest() throws Exception {
         // GIVEN - Fake Data
         UserDto userEntity = new UserDto();
         userEntity.setFirstName("Anthony");
@@ -51,7 +51,7 @@ public class UserServiceTest {
 
     @Test
     @DisplayName("GIVEN fake List of UserDto WHEN i get all THEN i expect a list containing theses users")
-    void getUserDtoListTest() {
+    void getUserDtoListTest() throws Exception {
         // GIVEN - Fake Data
         UserDto userEntityOne = new UserDto();
         userEntityOne.setFirstName("Anthony");
@@ -83,7 +83,7 @@ public class UserServiceTest {
 
     @Test
     @DisplayName("GIVEN a UserDto WHEN i get update it THEN the updated User is saved in database")
-    void updateUserDtoTest() {
+    void updateUserDtoTest() throws Exception {
         // GIVEN - Fake Data
         UserDto userDto = new UserDto();
         userDto.setFirstName("Anthony");
@@ -112,7 +112,7 @@ public class UserServiceTest {
 
     @Test
     @DisplayName("GIVEN a UserDto WHEN i save and delete it THEN it is not present in database")
-    void deleteUserDtoTest() {
+    void deleteUserDtoTest() throws Exception {
         // GIVEN - Fake Data
         UserDto userEntity = new UserDto();
         userEntity.setFirstName("Anthony");
