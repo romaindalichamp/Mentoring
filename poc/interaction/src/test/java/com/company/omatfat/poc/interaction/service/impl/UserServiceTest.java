@@ -1,6 +1,7 @@
 package com.company.omatfat.poc.interaction.service.impl;
 
 import com.company.omatfat.poc.interaction.dto.UserDto;
+import com.company.omatfat.poc.interaction.exception.UserException;
 import com.company.omatfat.poc.interaction.service.api.UserServiceApi;
 import java.util.ArrayList;
 import java.util.List;
@@ -129,8 +130,12 @@ public class UserServiceTest {
         userService.deleteUserDto(myUserDtoCreated.getId());
 
         // THEN
-        UserDto myUpdatedResult =
-                userService.getUserDto(myUserDtoCreated.getId());
-        Assertions.assertTrue(myUpdatedResult == null);
+//        UserDto myUpdatedResult =
+//                userService.getUserDto(myUserDtoCreated.getId());
+
+        System.out.println(UserException.class);
+        Assertions.assertThrows(
+                UserException.class,
+                () -> userService.getUserDto(myUserDtoCreated.getId()));
     }
 }
