@@ -17,6 +17,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @author Romain DALICHAMP - romain.dalichamp@alithya.com
  * <p>
+ * Tony Stark Was Here
  */
 @Component
 public class UserRestClient extends RestTemplate {
