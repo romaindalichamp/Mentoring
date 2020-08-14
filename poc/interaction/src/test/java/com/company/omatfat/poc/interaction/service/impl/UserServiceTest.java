@@ -15,7 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  * <p>
  */
 @SpringBootTest
-public class UserServiceTest {
+class UserServiceTest {
     /*
         /!\ ----- Test name = ClassNameTest                                /!\
         /!\ ----- SERVICES are the only revelent classes to be Unit Test   /!\
@@ -27,110 +27,194 @@ public class UserServiceTest {
 
     @Test
     @DisplayName("GIVEN fake UserDto WHEN i get by id THEN i expect the correct infos")
-    void addAndGetUserDtoTest() {
+    void addAndGetUserDtoTest() throws Exception {
         // GIVEN - Fake Data
-        UserDto userEntity = new UserDto();
-        userEntity.setFirstName("Anthony");
-        userEntity.setLastName("Stark");
-        userEntity.setOld(50);
-        UserDto myUserDtoCreated = userService.addUserDto(userEntity);
+        // UserDto userEntity = new UserDto();
+//        userEntity.setFirstName("Anthony");
+//        userEntity.setLastName("Stark");
+//        userEntity.setOld(50);
+//        UserDto myUserDtoCreated = userService.addUserDto(userEntity);
+//
+//        // WHEN - method to test
+//        UserDto myResult = userService.getUserDto(
+//                myUserDtoCreated.getId()
+//        );
+//
+//        // THEN - Expected Result
+//        Assertions.assertTrue(myResult.getFirstName().equals("Anthony"));
+//        Assertions.assertTrue(myResult.getLastName().equals("Stark"));
+//        Assertions.assertTrue(myResult.getOld().equals(50));
+//
+//        // FINALLY - clean
+//        userService.deleteUserDto(myUserDtoCreated.getId());
 
-        // WHEN - method to test
-        UserDto myResult = userService.getUserDto(
-                myUserDtoCreated.getId()
-        );
+        //Given
+        UserDto userOneLudwig = new UserDto();
+        userOneLudwig.setFirstName("Ludwig");
+        userOneLudwig.setLastName("Picot");
+        userOneLudwig.setOld(30);
 
-        // THEN - Expected Result
-        Assertions.assertTrue(myResult.getFirstName().equals("Anthony"));
-        Assertions.assertTrue(myResult.getLastName().equals("Stark"));
-        Assertions.assertTrue(myResult.getOld().equals(50));
+        //When
+        UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
 
-        // FINALLY - clean
-        userService.deleteUserDto(myUserDtoCreated.getId());
+        //Then
+        Assertions.assertTrue(userService.getUserDto(userCreatedLudOne.getId()).getFirstName() == userOneLudwig.getFirstName());
+
+        //Finally
+        userService.deleteUserDto(userCreatedLudOne.getId());
     }
 
     @Test
     @DisplayName("GIVEN fake List of UserDto WHEN i get all THEN i expect a list containing theses users")
     void getUserDtoListTest() {
-        // GIVEN - Fake Data
-        UserDto userEntityOne = new UserDto();
-        userEntityOne.setFirstName("Anthony");
-        userEntityOne.setLastName("Stark");
-        userEntityOne.setOld(50);
+//        //GIVEN - Fake Data
+//        UserDto userEntityOne = new UserDto();
+//        userEntityOne.setFirstName("Anthony");
+//        userEntityOne.setLastName("Stark");
+//        userEntityOne.setOld(50);
+//
+//        UserDto userEntityTwo = new UserDto();
+//        userEntityTwo.setFirstName("Anthony");
+//        userEntityTwo.setLastName("Stark");
+//        userEntityTwo.setOld(50);
+//
+//        List<UserDto> myUserDtoList = new ArrayList<>();
+//        myUserDtoList.add(userEntityOne);
+//        myUserDtoList.add(userEntityTwo);
+//        UserDto myUserDtoCreatedOne = userService.addUserDto(userEntityOne);
+//        UserDto myUserDtoCreatedTwo = userService.addUserDto(userEntityTwo);
+//
+//        // WHEN - method to test
+//        List<UserDto> myResult = userService.getAllUserDto();
+//
+//        // THEN - Expected Result
+//        Assertions.assertTrue(myResult.contains(myUserDtoCreatedOne));
+//        Assertions.assertTrue(myResult.contains(myUserDtoCreatedTwo));
+//
+//        // FINALLY - clean database
+//        userService.deleteUserDto(myUserDtoCreatedOne.getId());
+//        userService.deleteUserDto(myUserDtoCreatedTwo.getId());
 
-        UserDto userEntityTwo = new UserDto();
-        userEntityTwo.setFirstName("Anthony");
-        userEntityTwo.setLastName("Stark");
-        userEntityTwo.setOld(50);
+        //Given
+        UserDto userOneLudwig = new UserDto();
+        userOneLudwig.setFirstName("Ludwig");
+        userOneLudwig.setLastName("Picot");
+        userOneLudwig.setOld(30);
 
-        List<UserDto> myUserDtoList = new ArrayList<>();
-        myUserDtoList.add(userEntityOne);
-        myUserDtoList.add(userEntityTwo);
-        UserDto myUserDtoCreatedOne = userService.addUserDto(userEntityOne);
-        UserDto myUserDtoCreatedTwo = userService.addUserDto(userEntityTwo);
+        UserDto userTwoLudwig = new UserDto();
+        userTwoLudwig.setFirstName("Ludwigo");
+        userTwoLudwig.setLastName("Picote");
+        userTwoLudwig.setOld(31);
 
-        // WHEN - method to test
-        List<UserDto> myResult = userService.getAllUserDto();
+        //When
+        UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
+        UserDto userCreatedLudTwo = userService.addUserDto(userOneLudwig);
+        userService.addUserDto(userOneLudwig);
+        userService.addUserDto(userTwoLudwig);
 
-        // THEN - Expected Result
-        Assertions.assertTrue(myResult.contains(myUserDtoCreatedOne));
-        Assertions.assertTrue(myResult.contains(myUserDtoCreatedTwo));
+        //Then
+        Assertions.assertTrue(
+                userService.getAllUserDto().contains(userCreatedLudOne) &&
+                        userService.getAllUserDto().contains(userCreatedLudTwo));
 
-        // FINALLY - clean database
-        userService.deleteUserDto(myUserDtoCreatedOne.getId());
-        userService.deleteUserDto(myUserDtoCreatedTwo.getId());
+        //Finally
+        userService.deleteUserDto(userOneLudwig.getId());
+        userService.deleteUserDto(userTwoLudwig.getId());
+
     }
 
     @Test
     @DisplayName("GIVEN a UserDto WHEN i get update it THEN the updated User is saved in database")
     void updateUserDtoTest() {
-        // GIVEN - Fake Data
-        UserDto userDto = new UserDto();
-        userDto.setFirstName("Anthony");
-        userDto.setLastName("Stark");
-        userDto.setOld(50);
+//        // GIVEN - Fake Data
+//        UserDto userDto = new UserDto();
+//        userDto.setFirstName("Anthony");
+//        userDto.setLastName("Stark");
+//        userDto.setOld(50);
+//
+//        // WHEN- create
+//        UserDto myUserDtoCreated = userService.addUserDto(userDto);
+//
+//        // THEN
+//        Assertions.assertTrue(myUserDtoCreated.getFirstName().equals("Anthony"));
+//
+//        // WHEN - update
+//        myUserDtoCreated.setFirstName("Tony");
+//        UserDto myUserDtoUpdated = userService.updateUserDto(myUserDtoCreated);
+//        Assertions.assertNotNull(myUserDtoUpdated);
+//
+//        // THEN
+//        UserDto myUpdatedResult =
+//                userService.getUserDto(myUserDtoCreated.getId());
+//        Assertions.assertTrue(myUpdatedResult.getFirstName().equals("Tony"));
+//
+//        // FINALLY - clean database
+//        userService.deleteUserDto(myUserDtoCreated.getId());
 
-        // WHEN- create
-        UserDto myUserDtoCreated = userService.addUserDto(userDto);
+        //Given
+        UserDto userOneLudwig = new UserDto();
+        userOneLudwig.setFirstName("Ludwig");
+        userOneLudwig.setLastName("Picot");
+        userOneLudwig.setOld(30);
 
-        // THEN
-        Assertions.assertTrue(myUserDtoCreated.getFirstName().equals("Anthony"));
+        //When
+        userService.addUserDto(userOneLudwig);
 
-        // WHEN - update
-        myUserDtoCreated.setFirstName("Tony");
-        UserDto myUserDtoUpdated = userService.updateUserDto(myUserDtoCreated);
-        Assertions.assertNotNull(myUserDtoUpdated);
+        //Then check du add
+        UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
+        Assertions.assertTrue(userOneLudwig.getFirstName() == userService.getUserDto(userCreatedLudOne.getId()).getFirstName());
 
-        // THEN
-        UserDto myUpdatedResult =
-                userService.getUserDto(myUserDtoCreated.getId());
-        Assertions.assertTrue(myUpdatedResult.getFirstName().equals("Tony"));
+        //When
+        userOneLudwig.setFirstName("TestFristName");
+        userService.updateUserDto(userOneLudwig);
 
-        // FINALLY - clean database
-        userService.deleteUserDto(myUserDtoCreated.getId());
+        //Then check du update
+        Assertions.assertTrue(userOneLudwig.getFirstName() == userService.getUserDto(userOneLudwig.getId()).getFirstName());
+
+        //Finally
+        userService.deleteUserDto(userCreatedLudOne.getId());
     }
 
     @Test
     @DisplayName("GIVEN a UserDto WHEN i save and delete it THEN it is not present in database")
     void deleteUserDtoTest() {
-        // GIVEN - Fake Data
-        UserDto userEntity = new UserDto();
-        userEntity.setFirstName("Anthony");
-        userEntity.setLastName("Stark");
-        userEntity.setOld(50);
+//        // GIVEN - Fake Data
+//        UserDto userEntity = new UserDto();
+//        userEntity.setFirstName("Anthony");
+//        userEntity.setLastName("Stark");
+//        userEntity.setOld(50);
+//
+//        // WHEN- create
+//        UserDto myUserDtoCreated = userService.addUserDto(userEntity);
+//
+//        // THEN
+//        Assertions.assertTrue(myUserDtoCreated.getFirstName().equals("Anthony"));
+//
+//        // WHEN - delete
+//        userService.deleteUserDto(myUserDtoCreated.getId());
+//
+//        // THEN
+//        UserDto myUpdatedResult =
+//                userService.getUserDto(myUserDtoCreated.getId());
+//        Assertions.assertTrue(myUpdatedResult == null);
 
-        // WHEN- create
-        UserDto myUserDtoCreated = userService.addUserDto(userEntity);
+        //Given
+        UserDto userOneLudwig = new UserDto();
+        userOneLudwig.setFirstName("Ludwig");
+        userOneLudwig.setLastName("Picot");
+        userOneLudwig.setOld(30);
 
-        // THEN
-        Assertions.assertTrue(myUserDtoCreated.getFirstName().equals("Anthony"));
+        //When
+        userService.addUserDto(userOneLudwig);
 
-        // WHEN - delete
-        userService.deleteUserDto(myUserDtoCreated.getId());
+        //Then check qu'il existe
+        UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
+        Assertions.assertTrue(userOneLudwig.hashCode() == userService.getUserDto(userCreatedLudOne.getId()).hashCode());
 
-        // THEN
-        UserDto myUpdatedResult =
-                userService.getUserDto(myUserDtoCreated.getId());
-        Assertions.assertTrue(myUpdatedResult == null);
+        //When
+        userService.deleteUserDto(userCreatedLudOne.getId());
+
+        //Then check du delete
+        Assertions.assertTrue(!userService.getAllUserDto().contains(userOneLudwig));
     }
 }
