@@ -9,6 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.web.client.HttpClientErrorException;
 
 /**
  * @author Romain DALICHAMP - romain.dalichamp@alithya.com
@@ -25,11 +26,29 @@ class UserServiceTest {
     @Autowired
     UserServiceApi userService;
 
+    private UserDto DtoCreation(String firstName, String lastName, Integer old) {
+        UserDto dtoCree = new UserDto();
+        dtoCree.setFirstName(firstName);
+        dtoCree.setLastName(lastName);
+        dtoCree.setOld(old);
+        return dtoCree;
+    }
+
+    @Test
+    @DisplayName("GIVEN user DTO without ID WHEN i get by id THEN I except an exception")
+    void addAndGetUserDtoExceptionTest() throws HttpClientErrorException {
+        //Given
+        UserDto userExpLudwig = DtoCreation("Ludwig", "Picot", 30);
+
+        //Then
+        Assertions.assertThrows(HttpClientErrorException.class, () -> userService.getUserDto(userExpLudwig.getId()));
+    }
+
     @Test
     @DisplayName("GIVEN fake UserDto WHEN i get by id THEN i expect the correct infos")
     void addAndGetUserDtoTest() throws Exception {
-        // GIVEN - Fake Data
-        // UserDto userEntity = new UserDto();
+//        // GIVEN - Fake Data
+//        UserDto userEntity = new UserDto();
 //        userEntity.setFirstName("Anthony");
 //        userEntity.setLastName("Stark");
 //        userEntity.setOld(50);
@@ -49,25 +68,23 @@ class UserServiceTest {
 //        userService.deleteUserDto(myUserDtoCreated.getId());
 
         //Given
-        UserDto userOneLudwig = new UserDto();
-        userOneLudwig.setFirstName("Ludwig");
-        userOneLudwig.setLastName("Picot");
-        userOneLudwig.setOld(30);
+        UserDto userOneLudwig = DtoCreation("Ludwig", "Picot", 30);
 
         //When
         UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
 
         //Then
-        Assertions.assertTrue(userService.getUserDto(userCreatedLudOne.getId()).getFirstName() == userOneLudwig.getFirstName());
+        Assertions.assertTrue(userService.getUserDto(userCreatedLudOne.getId()).getFirstName().equals(userOneLudwig.getFirstName()));
 
         //Finally
         userService.deleteUserDto(userCreatedLudOne.getId());
+
     }
 
     @Test
     @DisplayName("GIVEN fake List of UserDto WHEN i get all THEN i expect a list containing theses users")
     void getUserDtoListTest() {
-//        //GIVEN - Fake Data
+//        // GIVEN - Fake Data
 //        UserDto userEntityOne = new UserDto();
 //        userEntityOne.setFirstName("Anthony");
 //        userEntityOne.setLastName("Stark");
@@ -96,21 +113,12 @@ class UserServiceTest {
 //        userService.deleteUserDto(myUserDtoCreatedTwo.getId());
 
         //Given
-        UserDto userOneLudwig = new UserDto();
-        userOneLudwig.setFirstName("Ludwig");
-        userOneLudwig.setLastName("Picot");
-        userOneLudwig.setOld(30);
-
-        UserDto userTwoLudwig = new UserDto();
-        userTwoLudwig.setFirstName("Ludwigo");
-        userTwoLudwig.setLastName("Picote");
-        userTwoLudwig.setOld(31);
+        UserDto userOneLudwig = DtoCreation("Ludwig", "Picot", 30);
+        UserDto userTwoLudwig = DtoCreation("Ludwigo", "Picote", 31);
 
         //When
         UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
-        UserDto userCreatedLudTwo = userService.addUserDto(userOneLudwig);
-        userService.addUserDto(userOneLudwig);
-        userService.addUserDto(userTwoLudwig);
+        UserDto userCreatedLudTwo = userService.addUserDto(userTwoLudwig);
 
         //Then
         Assertions.assertTrue(
@@ -118,9 +126,8 @@ class UserServiceTest {
                         userService.getAllUserDto().contains(userCreatedLudTwo));
 
         //Finally
-        userService.deleteUserDto(userOneLudwig.getId());
-        userService.deleteUserDto(userTwoLudwig.getId());
-
+        userService.deleteUserDto(userCreatedLudOne.getId());
+        userService.deleteUserDto(userCreatedLudTwo.getId());
     }
 
     @Test
@@ -152,24 +159,22 @@ class UserServiceTest {
 //        userService.deleteUserDto(myUserDtoCreated.getId());
 
         //Given
-        UserDto userOneLudwig = new UserDto();
-        userOneLudwig.setFirstName("Ludwig");
-        userOneLudwig.setLastName("Picot");
-        userOneLudwig.setOld(30);
+        UserDto userOneLudwig = DtoCreation("Ludwig", "Picot", 30);
 
         //When
         userService.addUserDto(userOneLudwig);
 
         //Then check du add
         UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
-        Assertions.assertTrue(userOneLudwig.getFirstName() == userService.getUserDto(userCreatedLudOne.getId()).getFirstName());
+        Assertions.assertTrue(userOneLudwig.getFirstName().equals(userService.getUserDto(userCreatedLudOne.getId()).getFirstName()));
 
         //When
-        userOneLudwig.setFirstName("TestFristName");
-        userService.updateUserDto(userOneLudwig);
+        userCreatedLudOne.setFirstName("TestFirstName");
+        userOneLudwig.setFirstName("TestFirstName");
+        userService.updateUserDto(userCreatedLudOne);
 
         //Then check du update
-        Assertions.assertTrue(userOneLudwig.getFirstName() == userService.getUserDto(userOneLudwig.getId()).getFirstName());
+        Assertions.assertTrue(userOneLudwig.getFirstName().equals(userService.getUserDto(userCreatedLudOne.getId()).getFirstName()));
 
         //Finally
         userService.deleteUserDto(userCreatedLudOne.getId());
@@ -177,7 +182,7 @@ class UserServiceTest {
 
     @Test
     @DisplayName("GIVEN a UserDto WHEN i save and delete it THEN it is not present in database")
-    void deleteUserDtoTest() {
+    void deleteUserDtoTest() throws Exception {
 //        // GIVEN - Fake Data
 //        UserDto userEntity = new UserDto();
 //        userEntity.setFirstName("Anthony");
@@ -194,22 +199,22 @@ class UserServiceTest {
 //        userService.deleteUserDto(myUserDtoCreated.getId());
 //
 //        // THEN
-//        UserDto myUpdatedResult =
-//                userService.getUserDto(myUserDtoCreated.getId());
-//        Assertions.assertTrue(myUpdatedResult == null);
+////        UserDto myUpdatedResult =
+////                userService.getUserDto(myUserDtoCreated.getId());
+//
+//        System.out.println(UserException.class);
+//        Assertions.assertThrows(
+//                UserException.class,
+//                () -> userService.getUserDto(myUserDtoCreated.getId()));
 
         //Given
-        UserDto userOneLudwig = new UserDto();
-        userOneLudwig.setFirstName("Ludwig");
-        userOneLudwig.setLastName("Picot");
-        userOneLudwig.setOld(30);
+        UserDto userOneLudwig = DtoCreation("Ludwig", "Picot", 30);
 
         //When
-        userService.addUserDto(userOneLudwig);
+        UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
 
         //Then check qu'il existe
-        UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
-        Assertions.assertTrue(userOneLudwig.hashCode() == userService.getUserDto(userCreatedLudOne.getId()).hashCode());
+        Assertions.assertTrue(userOneLudwig.getFirstName().equals(userService.getUserDto(userCreatedLudOne.getId()).getFirstName()));
 
         //When
         userService.deleteUserDto(userCreatedLudOne.getId());
