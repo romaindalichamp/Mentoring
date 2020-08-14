@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Objects;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.ResourceAccessException;
@@ -30,64 +29,67 @@ public class UserRestClient extends RestTemplate {
     public UserDto getUserDto(Long id) throws MetierApiException, UserException {
         try {
             UserDto user = getForObject(metierUrl + jsonUri + id, UserDto.class);
-
-            if (Objects.isNull(user)) {
-                throw new UserException("User not found");
+            if(Objects.isNull(user)) {
+                throw new UserException("Could not find user.");
             }
-
             return user;
-        } catch (MetierApiException e) {
-            throw new MetierApiException("Could not contact the Metier API");
+        }
+
+        catch(MetierApiException e) {
+            throw new MetierApiException("Could not contact API.");
         }
     }
 
-    public List<UserDto> getAllUserDto() throws MetierApiException, UserException {
+    public UserDto addUserDto(UserDto user) throws MetierApiException, UserException {
+        try {
+            UserDto responseUser = postForObject(metierUrl + jsonUri, user, UserDto.class);
+            if(Objects.isNull(responseUser)) {
+                throw new UserException("No user returned");
+            }
+            return responseUser;
+        }
+
+        catch(MetierApiException e) {
+            throw new MetierApiException("Could not contact API.");
+        }
+    }
+
+    public List<UserDto> getAllUserDto() throws UserException, MetierApiException {
         try {
             UserDto[] userDtos =
-                    getForObject(metierUrl + jsonUri, UserDto[].class);
-
-            if (ArrayUtils.isEmpty(userDtos)) {
-                throw new UserException("Could not get all Users list");
+                getForObject(metierUrl + jsonUri, UserDto[].class);
+            if(ArrayUtils.isEmpty(userDtos) || Objects.isNull(userDtos)) {
+                throw new UserException("Could not get user list.");
             }
-
             return Arrays.asList(userDtos);
-        } catch (MetierApiException e) {
-            throw new MetierApiException("Could not contact the Metier API");
+        }
+        catch(MetierApiException e) {
+            throw new MetierApiException("Could not contact API.");
         }
     }
 
-    public UserDto addUserDto(UserDto userDto) throws MetierApiException, UserException {
+    public UserDto updateUserDto(UserDto user) throws UserException, MetierApiException {
         try {
-            UserDto createdUser = postForObject(metierUrl + jsonUri, userDto, UserDto.class);
-
-            if (Objects.isNull(createdUser)) {
-                throw new UserException("The User has not been created");
-            }
-
-            return createdUser;
-        } catch (MetierApiException e) {
-            throw new MetierApiException("Could not contact the Metier API");
+            put(metierUrl + jsonUri, user, UserDto.class);
+            return getUserDto(user.getId());
         }
-    }
-
-    public UserDto updateUserDto(UserDto userDto) throws MetierApiException, UserException {
-        try {
-            put(metierUrl + jsonUri, userDto);
-            return getUserDto(userDto.getId());
-        } catch (ResourceAccessException e) {
-            throw new UserException("Could not update the User: " + userDto.getId());
-        } catch (MetierApiException e) {
-            throw new MetierApiException("Could not contact the Metier API");
+        catch(ResourceAccessException e) {
+            throw new ResourceAccessException("Could not update user. Id : " + user.getId());
+        }
+        catch(MetierApiException e) {
+            throw new MetierApiException("Could not contact API.");
         }
     }
 
     public void deleteUserDto(Long id) throws MetierApiException, UserException {
         try {
             delete(metierUrl + jsonUri + id);
-        } catch (HttpServerErrorException.InternalServerError e) {
-            throw new UserException("Could not delete the User: " + id);
-        } catch (MetierApiException e) {
-            throw new MetierApiException("Could not contact the Metier API");
+        }
+        catch (HttpServerErrorException.InternalServerError e) {
+            throw new UserException("Could not delete the User. Id : " + id);
+        }
+        catch(MetierApiException e) {
+            throw new MetierApiException("Could not contact API");
         }
     }
 }
