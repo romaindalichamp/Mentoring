@@ -24,29 +24,30 @@ class UserRestClientTest {
     @DisplayName("GIVEN a fake user WHEN using addUserDto and getUserDto THEN I expect the correct info.")
     void addAndGetUserDtoTest() {
         // GIVEN fake user
-        String firstName = "Michel";
-        String lastName = "Drucker";
-        int old = 62;
-
         UserDto user = new UserDto();
-        user.setFirstName(firstName);
-        user.setLastName(lastName);
-        user.setOld(old);
+        user.setFirstName("Michel");
+        user.setLastName("Drucker");
+        user.setOld(64);
 
         // WHEN - addUserDto(user), getUserDto(user)
-        user = userRestClient.addUserDto(user);
-        UserDto responseUser = userRestClient.getUserDto(user.getId());
+        UserDto addedUser = userRestClient.addUserDto(user);
+        UserDto responseUser = userRestClient.getUserDto(addedUser.getId());
 
         // THEN - result
-        Assertions.assertEquals(user.getId(), responseUser.getId());
-        Assertions.assertEquals(firstName, responseUser.getFirstName());
-        Assertions.assertEquals(lastName, responseUser.getLastName());
-        Assertions.assertEquals(old, responseUser.getOld());
+        Assertions.assertEquals(addedUser.getId(), responseUser.getId());
+        Assertions.assertEquals(addedUser.getFirstName(), responseUser.getFirstName());
+        Assertions.assertEquals(addedUser.getLastName(), responseUser.getLastName());
+        Assertions.assertEquals(addedUser.getOld(), responseUser.getOld());
+
+        // UserException when getting a user that doesn'T exist.
+        Assertions.assertThrows(
+                UserException.class,
+                () -> userRestClient.getUserDto(99L));
 
         // FINALLY - clean
         userRestClient.deleteUserDto(responseUser.getId());
-
     }
+
 
     @Test
     @DisplayName("GIVEN two fake users WHEN using getAllUserDto THEN I expect the correct info.")
@@ -62,20 +63,33 @@ class UserRestClientTest {
         userTwo.setLastName("Smith");
         userTwo.setOld(14);
 
-        userOne = userRestClient.addUserDto(userOne);
-        userTwo = userRestClient.addUserDto(userTwo);
+        UserDto addedUserOne = userRestClient.addUserDto(userOne);
+        UserDto addedUserTwo = userRestClient.addUserDto(userTwo);
 
         // WHEN getAllUserDto()
         List<UserDto> userDtos = userRestClient.getAllUserDto();
+        System.out.println(userDtos);
 
         // THEN expected result
         Assertions.assertEquals(2, userDtos.size());
-        Assertions.assertTrue(userDtos.contains(userOne));
-        Assertions.assertTrue(userDtos.contains(userTwo));
+        Assertions.assertTrue(userDtos.contains(addedUserOne));
+        Assertions.assertTrue(userDtos.contains(addedUserTwo));
 
         // FINALLY - clean
-        userRestClient.deleteUserDto(userOne.getId());
-        userRestClient.deleteUserDto(userTwo.getId());
+        userRestClient.deleteUserDto(addedUserOne.getId());
+        userRestClient.deleteUserDto(addedUserTwo.getId());
+    }
+
+
+    @Test
+    @DisplayName("GIVEN nothing, WHEN using getAllUserDto, THEN expect UserException")
+    void getAllUserDtoWhenNullTest() {
+        // GIVEN nothing
+        // WHEN using getAllUserDto
+        // THEN - expected result
+        Assertions.assertThrows(
+                UserException.class,
+                () -> userRestClient.getAllUserDto());
     }
 
 
@@ -83,36 +97,30 @@ class UserRestClientTest {
     @DisplayName("GIVEN an old and a new user, WHEN updating old to new THEN i expect the correct result ")
     void updateUserDtoTest() {
         // GIVEN a fake user and a new user user
-        UserDto oldUser = new UserDto();
+        UserDto oldUser = new UserDto(); // User we add to the database
         oldUser.setFirstName("Mickey");
         oldUser.setLastName("Mouse");
         oldUser.setOld(99);
 
-
-        String newUserFirstName = "Donald";
-        String newUserLastName = "Duck";
-        int newUserOld = 77;
-
-        UserDto newUser = new UserDto();
-        newUser.setFirstName(newUserFirstName);
-        newUser.setLastName(newUserLastName);
-        newUser.setOld(newUserOld);
+        UserDto newUser = new UserDto(); // User that will replace oldUser
+        newUser.setFirstName("Donald");
+        newUser.setLastName("Duck");
+        newUser.setOld(77);
 
         // WHEN updating old user to new user
-        oldUser = userRestClient.addUserDto(oldUser);
-        newUser.setId(oldUser.getId());
-        newUser = userRestClient.updateUserDto(newUser);
-        UserDto updatedUser = userRestClient.getUserDto(newUser.getId());
+        UserDto addedOldUser = userRestClient.addUserDto(oldUser);
+        newUser.setId(addedOldUser.getId());
+        UserDto updatedUser = userRestClient.updateUserDto(newUser);
 
         // THEN - expected result
-        Assertions.assertEquals(newUserFirstName, updatedUser.getFirstName());
-        Assertions.assertEquals(newUserLastName, updatedUser.getLastName());
-        Assertions.assertEquals(newUserOld, updatedUser.getOld());
+        Assertions.assertEquals(addedOldUser.getId(), updatedUser.getId()); // Same Id as the old user
+        Assertions.assertEquals(newUser.getFirstName(), updatedUser.getFirstName());
+        Assertions.assertEquals(newUser.getLastName(), updatedUser.getLastName());
+        Assertions.assertEquals(newUser.getOld(), updatedUser.getOld());
 
         // FINALLY - clean
         userRestClient.deleteUserDto(updatedUser.getId());
     }
-
 
     @Test
     @DisplayName("GIVEN a fake user, WHEN adding the user and deleting it THEN  I expect the correct result.")
@@ -124,13 +132,16 @@ class UserRestClientTest {
         user.setOld(46);
 
         // WHEN adding then deleting the user
-        user = userRestClient.addUserDto(user);
-        userRestClient.deleteUserDto(user.getId());
+        UserDto createdUser = userRestClient.addUserDto(user);
+        userRestClient.deleteUserDto(createdUser.getId());
 
         // THEN - expected result
-        Long userId = user.getId();
+        Long userId = createdUser.getId();
         Assertions.assertThrows(
                 UserException.class,
                 () -> userRestClient.getUserDto(userId));
+        Assertions.assertThrows(
+                UserException.class,
+                () -> userRestClient.deleteUserDto(200L));
     }
 }
