@@ -1,6 +1,7 @@
 package com.company.omatfat.poc.interaction.service.impl;
 
 import com.company.omatfat.poc.interaction.dto.UserDto;
+import com.company.omatfat.poc.interaction.exception.UserException;
 import com.company.omatfat.poc.interaction.service.api.UserServiceApi;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.web.client.HttpClientErrorException;
 
 /**
  * @author Romain DALICHAMP - romain.dalichamp@alithya.com
@@ -36,12 +36,12 @@ class UserServiceTest {
 
     @Test
     @DisplayName("GIVEN user DTO without ID WHEN i get by id THEN I except an exception")
-    void addAndGetUserDtoExceptionTest() throws HttpClientErrorException {
+    void addAndGetUserDtoExceptionTest() throws UserException {
         //Given
         UserDto userExpLudwig = DtoCreation("Ludwig", "Picot", 30);
 
         //Then
-        Assertions.assertThrows(HttpClientErrorException.class, () -> userService.getUserDto(userExpLudwig.getId()));
+        Assertions.assertThrows(UserException.class, () -> userService.getUserDto(userExpLudwig.getId()));
     }
 
     @Test
