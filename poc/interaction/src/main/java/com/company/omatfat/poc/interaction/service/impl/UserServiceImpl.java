@@ -8,7 +8,6 @@ import com.company.omatfat.poc.interaction.service.api.UserServiceApi;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
 
 /**
  * @author Romain DALICHAMP - romain.dalichamp@alithya.com
@@ -21,7 +20,7 @@ public class UserServiceImpl implements UserServiceApi {
 
     private final UserRestClient userRestClient;
 
-    public UserDto getUserDto(Long id) throws MetierApiException, UserException, HttpClientErrorException {
+    public UserDto getUserDto(Long id) throws MetierApiException, UserException {
         // Business rules
         return userRestClient.getUserDto(id);
     }
