@@ -35,13 +35,41 @@ class UserServiceTest {
     }
 
     @Test
-    @DisplayName("GIVEN user DTO without ID WHEN i get by id THEN I except an exception")
+    @DisplayName("GIVEN user DTO without ID WHEN i get by id THEN I expect an exception")
     void addAndGetUserDtoExceptionTest() throws UserException {
         //Given
         UserDto userExpLudwig = DtoCreation("Ludwig", "Picot", 30);
+        userExpLudwig.setId(0L);
 
         //Then
-        Assertions.assertThrows(UserException.class, () -> userService.getUserDto(userExpLudwig.getId()));
+        Assertions.assertThrows(
+                UserException.class,
+                () -> userService.getUserDto(userExpLudwig.getId()));
+    }
+
+    @Test
+        @DisplayName("GIVEN 2 user DTO without ID WHEN i get by id THEN I expect to get a list of 2 user DTO")
+        void getTwoUserTest() throws UserException {
+            //Given
+            UserDto userExpLudwig1 = DtoCreation("Ludwig", "Picot", 30);
+            UserDto userExpLudwig2 = DtoCreation("Ludwigo", "Picote", 31);
+
+            //when
+            UserDto userExpLudwig1Added = userService.addUserDto(userExpLudwig1);
+            UserDto userExpLudwig2Added = userService.addUserDto(userExpLudwig2);
+            List<UserDto> listUserDto = userService.getTwoUserDto(
+                    userExpLudwig1Added.getId(),
+                    userExpLudwig2Added.getId());
+
+            //Then
+            Assertions.assertTrue(
+                    listUserDto.contains(userExpLudwig1Added ) &&
+                listUserDto.contains(userExpLudwig2Added));
+        Assertions.assertEquals(2, listUserDto.size());
+
+        //Finally
+        userService.deleteUserDto(userExpLudwig1Added.getId());
+        userService.deleteUserDto(userExpLudwig2Added.getId());
     }
 
     @Test
@@ -74,11 +102,11 @@ class UserServiceTest {
         UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
 
         //Then
-        Assertions.assertTrue(userService.getUserDto(userCreatedLudOne.getId()).getFirstName().equals(userOneLudwig.getFirstName()));
+        Assertions.assertTrue(userService.getUserDto(userCreatedLudOne.getId()).getFirstName().equals
+                (userOneLudwig.getFirstName()));
 
         //Finally
         userService.deleteUserDto(userCreatedLudOne.getId());
-
     }
 
     @Test
@@ -162,11 +190,11 @@ class UserServiceTest {
         UserDto userOneLudwig = DtoCreation("Ludwig", "Picot", 30);
 
         //When
-        userService.addUserDto(userOneLudwig);
+        UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
 
         //Then check du add
-        UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
-        Assertions.assertTrue(userOneLudwig.getFirstName().equals(userService.getUserDto(userCreatedLudOne.getId()).getFirstName()));
+        Assertions.assertTrue(userOneLudwig.getFirstName().equals
+                (userService.getUserDto(userCreatedLudOne.getId()).getFirstName()));
 
         //When
         userCreatedLudOne.setFirstName("TestFirstName");
@@ -174,14 +202,15 @@ class UserServiceTest {
         userService.updateUserDto(userCreatedLudOne);
 
         //Then check du update
-        Assertions.assertTrue(userOneLudwig.getFirstName().equals(userService.getUserDto(userCreatedLudOne.getId()).getFirstName()));
+        Assertions.assertTrue(userOneLudwig.getFirstName().equals
+                (userService.getUserDto(userCreatedLudOne.getId()).getFirstName()));
 
         //Finally
         userService.deleteUserDto(userCreatedLudOne.getId());
     }
 
     @Test
-    @DisplayName("GIVEN a UserDto WHEN i save and delete it THEN it is not present in database")
+    @DisplayName("GIVEN a UserDto WHEN i save and delete it THEN it is not present in the database")
     void deleteUserDtoTest() throws Exception {
 //        // GIVEN - Fake Data
 //        UserDto userEntity = new UserDto();
@@ -214,12 +243,15 @@ class UserServiceTest {
         UserDto userCreatedLudOne = userService.addUserDto(userOneLudwig);
 
         //Then check qu'il existe
-        Assertions.assertTrue(userOneLudwig.getFirstName().equals(userService.getUserDto(userCreatedLudOne.getId()).getFirstName()));
+        Assertions.assertTrue(userOneLudwig.getFirstName().equals
+                (userService.getUserDto(userCreatedLudOne.getId()).getFirstName()));
 
         //When
         userService.deleteUserDto(userCreatedLudOne.getId());
 
         //Then check du delete
-        Assertions.assertTrue(!userService.getAllUserDto().contains(userOneLudwig));
+        Assertions.assertThrows(
+                UserException.class,
+                () -> userService.getUserDto(userCreatedLudOne.getId()));
     }
 }
