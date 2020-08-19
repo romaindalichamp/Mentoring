@@ -13,6 +13,7 @@ import java.util.List;
  */
 public interface UserServiceApi {
     UserDto getUserDto(Long id) throws MetierApiException, UserException;
+    List<UserDto> getTwoUserDto(Long id, Long id2) throws MetierApiException, UserException;
     List<UserDto> getAllUserDto() throws MetierApiException, UserException ;
     UserDto addUserDto(UserDto userDto) throws MetierApiException, UserException ;
     UserDto updateUserDto(UserDto userDto) throws MetierApiException, UserException ;
