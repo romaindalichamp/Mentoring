@@ -57,7 +57,7 @@ Welcome to my Java Learning Program
 
 # Best Practices and Best Links
 
-<table><tbody><tr><td>REST Naming Conventions</td><td>https://restfulapi.net/resource-naming/</td></tr><tr><td>Java Magazine</td><td>https://blogs.oracle.com/javamagazine/</td></tr><tr><td>Java 8 SE Class Diagrams</td><td>http://www.falkhausen.de/Java-8/index.html</td></tr><tr><td>Intellij Idea Shortcut</td><td>https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf</td></tr><tr><td>Big O Algorithm</td><td>https://www.bigocheatsheet.com/</td></tr><tr><td>Programming Idioms</td><td>https://www.programming-idioms.org/about?fbclid=IwAR3_E9qvb_8a4q_Z3mD0ZA3Fw4IKAGKadLrGBTCNeaj7S1yrIJvP6bL-Ono#about-block-language-coverage</td></tr></tbody></table>
+<table><tbody><tr><td>REST Naming Conventions</td><td>https://restfulapi.net/resource-naming/</td></tr><tr><td>Java Magazine</td><td>https://blogs.oracle.com/javamagazine/</td></tr><tr><td>Java 8 SE Class Diagrams</td><td>http://www.falkhausen.de/Java-8/index.html</td></tr><tr><td>Intellij Idea Shortcut</td><td>https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf</td></tr><tr><td>Big O Algorithm</td><td>https://www.bigocheatsheet.com/</td></tr><tr><td>Programming Idioms</td><td>https://www.programming-idioms.org/about?fbclid=IwAR3_E9qvb_8a4q_Z3mD0ZA3Fw4IKAGKadLrGBTCNeaj7S1yrIJvP6bL-Ono#about-block-language-coverage</td></tr><tr><td>HTTP Errors Numbers</td><td>https://www.restapitutorial.com/httpstatuscodes.html</td></tr></tbody></table>
 
 # Learning
 
