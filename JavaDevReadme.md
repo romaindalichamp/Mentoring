@@ -111,19 +111,7 @@ A complete tutorial about how we are going to work with Git as a team https://gi
 
 *   [https://alithya.udemy.com/course/the-complete-guide-to-angular-2](https://alithya.udemy.com/course/the-complete-guide-to-angular-2)
 
-| 
-**Cours**
-
- | 
-
-**Udemy**
-
- |
-| --- | --- |
-| Observables | [Section 13](https://alithya.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656534) |
-| Operators | [Section 13 - 176](https://alithya.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/14466302) |
-| Forms - ViewChild | [Section 15 - 189.](https://alithya.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656468) |
-| Two Way Data Binding | [Section 2. 33](https://alithya.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6655868#overview) |
+<table><tbody><tr><td colspan="1" rowspan="1">Observables</td><td colspan="1" rowspan="1"><a href="https://alithya.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656534">Section 13</a></td></tr><tr><td colspan="1" rowspan="1">Operators</td><td colspan="1" rowspan="1"><a href="https://alithya.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/14466302">Section 13 - 176</a></td></tr><tr><td colspan="1" rowspan="1">Forms - ViewChild</td><td colspan="1" rowspan="1"><a href="https://alithya.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656468">Section 15 - 189.</a></td></tr><tr><td colspan="1" rowspan="1">Two Way Data Binding</td><td colspan="1" rowspan="1"><a href="https://alithya.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6655868#overview">Section 2. 33</a></td></tr><tr><td colspan="1" rowspan="1">Observables</td><td colspan="1" rowspan="1"><a href="https://alithya.udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6656534">Section 13</a></td></tr></tbody></table>
 
 ## Tests
 
